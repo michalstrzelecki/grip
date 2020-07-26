@@ -1,0 +1,22 @@
+uuid: 1c8febdd-790b-4871-8a47-0ceac34c75f3
+langcode: pl
+status: true
+dependencies:
+  module:
+    - system
+  theme:
+    - grip
+_core:
+  default_config_hash: 9EoWV2Lot6FVSr50t4hoKgiz1LIXYWNG-IIPYsWxBqo
+id: grip_content
+theme: grip
+region: content
+weight: -10
+provider: null
+plugin: system_main_block
+settings:
+  id: system_main_block
+  label: 'Main content'
+  provider: system
+  label_display: '0'
+visibility: {  }

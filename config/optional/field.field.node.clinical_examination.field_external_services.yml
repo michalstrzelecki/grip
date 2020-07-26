@@ -1,0 +1,23 @@
+uuid: 94dc62ff-aaa5-4202-a07c-1449fb90aa3c
+langcode: pl
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_external_services
+    - node.type.clinical_examination
+  module:
+    - link
+id: node.clinical_examination.field_external_services
+field_name: field_external_services
+entity_type: node
+bundle: clinical_examination
+label: 'External websites'
+description: ''
+required: false
+translatable: true
+default_value: {  }
+default_value_callback: ''
+settings:
+  link_type: 16
+  title: 2
+field_type: link

@@ -1,0 +1,27 @@
+uuid: 3617a5ac-bf8d-43f0-8c2b-b8c63c3baa0a
+langcode: pl
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_files
+    - node.type.ward
+  module:
+    - file
+id: node.ward.field_files
+field_name: field_files
+entity_type: node
+bundle: ward
+label: Files
+description: ''
+required: false
+translatable: true
+default_value: {  }
+default_value_callback: ''
+settings:
+  file_directory: ward
+  file_extensions: 'pdf doc docx docm xls xlsx xlsm xml png gif jpg jpeg webp'
+  max_filesize: '64 MB'
+  description_field: true
+  handler: 'default:file'
+  handler_settings: {  }
+field_type: file

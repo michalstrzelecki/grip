@@ -1,0 +1,21 @@
+uuid: 26e9be1d-1def-4cae-8d34-0c8645893f44
+langcode: pl
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_range_of_services
+    - node.type.teams
+  module:
+    - text
+id: node.teams.field_range_of_services
+field_name: field_range_of_services
+entity_type: node
+bundle: teams
+label: 'Task range'
+description: "Each committee has a mandate for which it was created."
+required: false
+translatable: true
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: text_long

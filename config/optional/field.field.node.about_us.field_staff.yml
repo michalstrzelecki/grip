@@ -1,0 +1,21 @@
+uuid: 8e5c5877-0060-477d-a820-12e6569b2ac7
+langcode: pl
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_staff
+    - node.type.about_us
+  module:
+    - text
+id: node.about_us.field_staff
+field_name: field_staff
+entity_type: node
+bundle: about_us
+label: Staff
+description: ''
+required: false
+translatable: true
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: text

@@ -1,0 +1,21 @@
+uuid: 702238a5-7431-4858-b942-56fab5dd4138
+langcode: pl
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_range_of_services
+    - node.type.ward
+  module:
+    - text
+id: node.ward.field_range_of_services
+field_name: field_range_of_services
+entity_type: node
+bundle: ward
+label: 'Range of services'
+description: ''
+required: false
+translatable: true
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: text_long

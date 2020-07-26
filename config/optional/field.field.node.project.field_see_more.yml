@@ -1,0 +1,31 @@
+uuid: 698d126c-df21-4151-befb-05f003256f1d
+langcode: pl
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_see_more
+    - node.type.gallery
+    - node.type.press_article
+    - node.type.project
+id: node.project.field_see_more
+field_name: field_see_more
+entity_type: node
+bundle: project
+label: 'See more'
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  handler: 'default:node'
+  handler_settings:
+    target_bundles:
+      press_article: press_article
+      gallery: gallery
+    sort:
+      field: created
+      direction: DESC
+    auto_create: false
+    auto_create_bundle: press_article
+field_type: entity_reference

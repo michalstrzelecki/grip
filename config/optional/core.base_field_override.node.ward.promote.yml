@@ -1,0 +1,22 @@
+uuid: e6bdc66c-c8b5-46cd-9308-c8aa2a0213c9
+langcode: pl
+status: true
+dependencies:
+  config:
+    - node.type.ward
+id: node.ward.promote
+field_name: promote
+entity_type: node
+bundle: ward
+label: 'Promoted on the home page'
+description: ''
+required: false
+translatable: true
+default_value:
+  -
+    value: 0
+default_value_callback: ''
+settings:
+  on_label: Włączony
+  off_label: Wyłączony
+field_type: boolean

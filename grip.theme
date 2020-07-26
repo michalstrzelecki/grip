@@ -1,0 +1,247 @@
+<?php
+
+use Drupal\block_content\BlockContentInterface;
+use Drupal\Core\Form\FormStateInterface;
+
+/**
+ * Implements hook_theme_suggestions_HOOK_alter().
+ *
+ * @param array $suggestions
+ * @param array $variables
+ */
+function grip_theme_suggestions_block_alter(
+  array &$suggestions,
+  array $variables
+) {
+  $content = $variables['elements']['content'];
+
+  if (isset($content['#block_content']) && $content['#block_content'] instanceof BlockContentInterface) {
+    $suggestions[] = $variables['theme_hook_original'] . '__' . $content['#block_content']->bundle();
+  }
+}
+
+/**
+ * Implements hook_theme_suggestions_HOOK_alter().
+ *
+ * @param array $suggestions
+ * @param array $variables
+ */
+function grip_theme_suggestions_field_alter(
+  array &$suggestions,
+  array $variables
+) {
+  if (isset($variables['element'])) {
+    $element = $variables['element'];
+
+    if (!empty($element['#object']) && $element['#object'] instanceof BlockContentInterface) {
+      foreach ($element['#object']->getInstances() as $key => $instance) {
+        $region = $instance->getRegion();
+        $theme_hook_original = $variables['theme_hook_original'];
+
+        $suggestions[] = $theme_hook_original . '__' . $region . '__' . $element['#field_type'];
+        $suggestions[] = $theme_hook_original . '__' . $region . '__' . $element['#field_name'];
+        $suggestions[] = $theme_hook_original . '__' . $region . '__' . $element['#entity_type'] . '__' . $element['#bundle'];
+        $suggestions[] = $theme_hook_original . '__' . $region . '__' . $element['#entity_type'] . '__' . $element['#field_name'];
+        $suggestions[] = $theme_hook_original . '__' . $region . '__' . $element['#entity_type'] . '__' . $element['#field_name'] . '__' . $element['#bundle'];
+      }
+    }
+  }
+}
+
+/**
+ * Implements hook_preprocess_HOOK().
+ *
+ * @param array $variables
+ */
+function grip_preprocess_input(array &$variables) {
+  $variables['attributes']['class'][] = 'form-control';
+}
+
+/**
+ * Implements hook_preprocess_HOOK().
+ *
+ * @param array $variables
+ */
+function grip_preprocess_form_element__search_block_form(array &$variables) {
+  $variables['label']['#id'] = 'header-search-form';
+
+  $variables['attributes']['class'] = [
+    'form-group',
+    'mb-0',
+  ];
+}
+
+/**
+ * Implements hook_preprocess_HOOK().
+ *
+ * @param array $variables
+ */
+function grip_preprocess_input__submit__user_login_form(array &$variables) {
+  array_push(
+    $variables['attributes']['class'],
+    'btn',
+    'btn-primary',
+    'font-weight-bold'
+  );
+  unset($variables['attributes']['class'][array_search('form-control', $variables['attributes']['class'])]);
+}
+
+/**
+ * Implements hook_HOOK_alter().
+ * TODO: make a way to remove this hook, because it is only used to set additional hook suggestions.
+ *
+ * @param array                                $form
+ * @param \Drupal\Core\Form\FormStateInterface $form_state
+ * @param                                      $form_id
+ */
+function grip_form_alter(
+  array &$form,
+  FormStateInterface $form_state,
+  $form_id
+) {
+  $form['actions']['submit']['#attributes']['data-template-name-suggestions'] = [
+    'form_id' => $form_id
+  ];
+  $form['keys']['#attributes']['data-template-name-suggestions'] = [
+    'form_id' => $form_id
+  ];
+}
+
+/**
+ * Implements hook_theme_suggestions_HOOK_alter().
+ *
+ * @param array $suggestions
+ * @param array $variables
+ */
+function grip_theme_suggestions_form_alter(
+  array &$suggestions,
+  array $variables
+) {
+  $suggestions[] = $variables['theme_hook_original'] . '__' . $variables['element']['#form_id'];
+}
+
+/**
+ * Implements hook_theme_suggestions_HOOK_alter().
+ *
+ * @param array $suggestions
+ * @param array $variables
+ */
+function grip_theme_suggestions_form_element_alter(
+  array &$suggestions,
+  array $variables
+) {
+  if (isset($variables['element']['#attributes']['data-template-name-suggestions']['form_id'])) {
+    $form_id = $variables['element']['#attributes']['data-template-name-suggestions']['form_id'];
+
+    $suggestions[] = $variables['theme_hook_original'] . '__' . $form_id;
+  }
+}
+
+/**
+ * Implements hook_theme_suggestions_HOOK_alter().
+ *
+ * @param array $suggestions
+ * @param array $variables
+ */
+function grip_theme_suggestions_input_alter(
+  array &$suggestions,
+  array $variables
+) {
+  if (isset($variables['element']['#attributes']['data-template-name-suggestions']['form_id'])) {
+    $form_id = $variables['element']['#attributes']['data-template-name-suggestions']['form_id'];
+
+    if (isset($form_id)) {
+      $suggestions[] = $variables['theme_hook_original'] . '__' . $form_id;
+    }
+  }
+}
+
+/**
+ * Implements hook_preprocess_HOOK().
+ *
+ * @param array $variables
+ */
+function grip_preprocess_block__views_block__last_tenders_block_last_tenders(
+  array &$variables
+) {
+  // we do not want wrap content
+  $variables['content']['#theme_wrappers'] = [];
+}
+
+/**
+ * Implements hook_preprocess_HOOK().
+ *
+ * @param array $variables
+ */
+function grip_preprocess_block__views_block__last_advertisements_block_last_advertisements(
+  array &$variables
+) {
+  // we do not want wrap content
+  $variables['content']['#theme_wrappers'] = [];
+}
+
+/**
+ * Implements hook_preprocess_HOOK().
+ *
+ * @param array $variables
+ */
+function grip_preprocess_links__node(array &$variables) {
+  $variables['links']['node-readmore']['link']['#options']['attributes'] = [
+    'class' => [
+      'text-decoration-none',
+      'btn',
+      'btn-outline-primary',
+    ]
+  ];
+}
+
+/**
+ * Implements hook_preprocess_HOOK().
+ *
+ * @param array $variables
+ */
+function grip_preprocess_menu_local_task(array &$variables) {
+  $variables['attributes']['class'] = [
+    'nav-item',
+  ];
+
+  $variables['link']['#options']['attributes']['class'] = [
+    'nav-link',
+  ];
+}
+
+/**
+ * Implements hook_preprocess_HOOK().
+ *
+ * @param array $variables
+ */
+function grip_preprocess_node(array &$variables) {
+  if (isset($variables['content_attributes'])) {
+    $variables['content_attributes']['class'] = [
+      'clearfix',
+    ];
+  }
+}
+
+/**
+ * Implements hook_preprocess_HOOK().
+ *
+ * @param array $variables
+ */
+function grip_preprocess_status_messages(array &$variables) {
+  $variables['attributes']['class'] = [
+    'my-4',
+  ];
+}
+
+/**
+ * Implements hook_preprocess_HOOK().
+ *
+ * We needed a way to change the id of the menu. There is a second menu on the
+ * page. Elements should have unique id.
+ *
+ * @param array $variables
+ */
+function grip_preprocess_block__main_navigation_tiles(array &$variables) {
+  $variables['content']['#menu_name'] = 'main-tiles';
+}

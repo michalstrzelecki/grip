@@ -1,0 +1,25 @@
+uuid: 5206e4fd-628c-493f-9bf0-8ad41ac1abbd
+langcode: pl
+status: true
+dependencies:
+  content:
+    - 'block_content:with_photos:4b46fb9d-9e42-4775-9ee4-6d477504ba97'
+  module:
+    - block_content
+  theme:
+    - grip
+id: anaesthesiology_and_intensive_care_unit
+theme: grip
+region: featured_bottom_first
+weight: -15
+provider: null
+plugin: 'block_content:4b46fb9d-9e42-4775-9ee4-6d477504ba97'
+settings:
+  id: 'block_content:4b46fb9d-9e42-4775-9ee4-6d477504ba97'
+  label: 'Department of Anaesthesiology and Intensive Care'
+  provider: block_content
+  label_display: visible
+  status: true
+  info: ''
+  view_mode: full
+visibility: {  }

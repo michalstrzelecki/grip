@@ -1,0 +1,22 @@
+uuid: 2ed8ee95-d761-4a8a-b717-6940adf9a1e9
+langcode: pl
+status: true
+dependencies:
+  theme:
+    - grip
+_core:
+  default_config_hash: X9I1OB0W3WlWtrK-CNcg6hNWwa8wficanpH8pYnDZDE
+id: grip_local_tasks
+theme: grip
+region: content
+weight: -12
+provider: null
+plugin: local_tasks_block
+settings:
+  id: local_tasks_block
+  label: Bookmarks
+  provider: core
+  label_display: '0'
+  primary: true
+  secondary: true
+visibility: {  }

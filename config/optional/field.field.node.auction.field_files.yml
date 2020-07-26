@@ -1,0 +1,27 @@
+uuid: 5827bd69-db61-40b9-a6cd-50e2336b7d08
+langcode: pl
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_files
+    - node.type.auction
+  module:
+    - file
+id: node.auction.field_files
+field_name: field_files
+entity_type: node
+bundle: auction
+label: Files
+description: ''
+required: false
+translatable: true
+default_value: {  }
+default_value_callback: ''
+settings:
+  file_directory: auction
+  file_extensions: 'pdf doc docx docm xls xlsx xlsm xml png gif jpg jpeg webp'
+  max_filesize: '64 MB'
+  description_field: true
+  handler: 'default:file'
+  handler_settings: {  }
+field_type: file

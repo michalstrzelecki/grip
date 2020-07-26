@@ -1,0 +1,89 @@
+uuid: 78461979-974e-44b6-9b6b-e77e36e29891
+langcode: pl
+status: true
+dependencies:
+  config:
+    - core.entity_view_mode.node.full
+    - field.field.node.press_article.body
+    - field.field.node.press_article.field_external_services
+    - field.field.node.press_article.field_featured_image
+    - field.field.node.press_article.field_files
+    - field.field.node.press_article.field_remote_video
+    - field.field.node.press_article.field_see_more
+    - field.field.node.press_article.field_tags
+    - node.type.press_article
+  module:
+    - file
+    - link
+    - text
+    - user
+id: node.press_article.full
+targetEntityType: node
+bundle: press_article
+mode: full
+content:
+  body:
+    label: hidden
+    type: text_default
+    weight: 1
+    settings: {  }
+    third_party_settings: {  }
+    region: content
+  field_external_services:
+    weight: 5
+    label: above
+    settings:
+      trim_length: 80
+      url_only: false
+      url_plain: false
+      rel: ''
+      target: ''
+    third_party_settings: {  }
+    type: link
+    region: content
+  field_featured_image:
+    type: entity_reference_entity_view
+    weight: 0
+    region: content
+    label: hidden
+    settings:
+      view_mode: full
+      link: false
+    third_party_settings: {  }
+  field_files:
+    weight: 2
+    label: above
+    settings:
+      use_description_as_link_text: true
+    third_party_settings: {  }
+    type: file_default
+    region: content
+  field_remote_video:
+    type: entity_reference_entity_view
+    weight: 3
+    region: content
+    label: visually_hidden
+    settings:
+      view_mode: full
+      link: false
+    third_party_settings: {  }
+  field_see_more:
+    type: entity_reference_entity_view
+    weight: 6
+    region: content
+    label: above
+    settings:
+      view_mode: teaser
+      link: false
+    third_party_settings: {  }
+  field_tags:
+    weight: 4
+    label: above
+    settings:
+      link: true
+    third_party_settings: {  }
+    type: entity_reference_label
+    region: content
+hidden:
+  langcode: true
+  links: true

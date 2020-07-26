@@ -1,0 +1,22 @@
+uuid: b358e603-83e2-42fc-aa16-f52451c1b504
+langcode: pl
+status: true
+dependencies:
+  config:
+    - node.type.clinical_examination
+id: node.clinical_examination.promote
+field_name: promote
+entity_type: node
+bundle: clinical_examination
+label: 'Promoted on the home page'
+description: ''
+required: false
+translatable: true
+default_value:
+  -
+    value: 0
+default_value_callback: ''
+settings:
+  on_label: Włączony
+  off_label: Wyłączony
+field_type: boolean

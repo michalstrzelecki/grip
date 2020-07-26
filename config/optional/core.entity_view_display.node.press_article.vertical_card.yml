@@ -1,0 +1,47 @@
+uuid: c91c006c-0e02-4611-a555-4f1645095e2c
+langcode: pl
+status: true
+dependencies:
+  config:
+    - core.entity_view_mode.node.vertical_card
+    - field.field.node.press_article.body
+    - field.field.node.press_article.field_external_services
+    - field.field.node.press_article.field_featured_image
+    - field.field.node.press_article.field_files
+    - field.field.node.press_article.field_remote_video
+    - field.field.node.press_article.field_see_more
+    - field.field.node.press_article.field_tags
+    - node.type.press_article
+  module:
+    - text
+    - user
+id: node.press_article.vertical_card
+targetEntityType: node
+bundle: press_article
+mode: vertical_card
+content:
+  body:
+    label: hidden
+    type: text_summary_or_trimmed
+    weight: 1
+    settings:
+      trim_length: 300
+    third_party_settings: {  }
+    region: content
+  field_featured_image:
+    weight: 0
+    label: hidden
+    settings:
+      view_mode: url
+      link: false
+    third_party_settings: {  }
+    type: entity_reference_entity_view
+    region: content
+hidden:
+  field_external_services: true
+  field_files: true
+  field_remote_video: true
+  field_see_more: true
+  field_tags: true
+  langcode: true
+  links: true

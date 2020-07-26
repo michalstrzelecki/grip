@@ -1,0 +1,21 @@
+uuid: eacd8f60-b206-4451-9f52-f8af6688190c
+langcode: pl
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_e_mail
+    - node.type.ward
+  module:
+    - text
+id: node.ward.field_e_mail
+field_name: field_e_mail
+entity_type: node
+bundle: ward
+label: E-mail
+description: ''
+required: false
+translatable: true
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: text

@@ -1,0 +1,21 @@
+uuid: b920e15b-3604-431c-969b-4a1bb1f3521c
+langcode: pl
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_e_mail
+    - node.type.about_us
+  module:
+    - text
+id: node.about_us.field_e_mail
+field_name: field_e_mail
+entity_type: node
+bundle: about_us
+label: E-mail
+description: ''
+required: false
+translatable: true
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: text

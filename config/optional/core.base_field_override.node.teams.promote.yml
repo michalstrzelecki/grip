@@ -1,0 +1,22 @@
+uuid: 34ffc0a7-5f6e-4c3a-9060-c587228254eb
+langcode: pl
+status: true
+dependencies:
+  config:
+    - node.type.teams
+id: node.teams.promote
+field_name: promote
+entity_type: node
+bundle: teams
+label: 'Promoted on the home page'
+description: ''
+required: false
+translatable: true
+default_value:
+  -
+    value: 1
+default_value_callback: ''
+settings:
+  on_label: Włączony
+  off_label: Wyłączony
+field_type: boolean

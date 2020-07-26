@@ -1,0 +1,19 @@
+uuid: 2e2a57c2-7368-46b7-b8b8-e0afb80be1d8
+langcode: pl
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_receptions
+    - node.type.clinic
+id: node.clinic.field_receptions
+field_name: field_receptions
+entity_type: node
+bundle: clinic
+label: Receptions
+description: "One field for one day. \ R \ n <strong> Format: </strong> Monday - 08:00 - 16:00"
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: string

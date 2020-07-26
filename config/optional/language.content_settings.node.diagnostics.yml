@@ -1,0 +1,11 @@
+uuid: d7268cbb-f41d-4990-9443-61831e8c26ab
+langcode: pl
+status: true
+dependencies:
+  config:
+    - node.type.diagnostics
+id: node.diagnostics
+target_entity_type_id: node
+target_bundle: diagnostics
+default_langcode: site_default
+language_alterable: false

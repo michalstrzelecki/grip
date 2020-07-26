@@ -1,0 +1,66 @@
+uuid: 09c62186-bd82-48f3-824c-95cf16f263ae
+langcode: pl
+status: true
+dependencies:
+  config:
+    - core.entity_view_mode.node.full
+    - field.field.node.advertisement.body
+    - field.field.node.advertisement.field_e_mail
+    - field.field.node.advertisement.field_external_services
+    - field.field.node.advertisement.field_files
+    - field.field.node.advertisement.field_phone_number
+    - node.type.advertisement
+  module:
+    - file
+    - link
+    - text
+    - user
+id: node.advertisement.full
+targetEntityType: node
+bundle: advertisement
+mode: full
+content:
+  body:
+    label: hidden
+    type: text_default
+    weight: 0
+    settings: {  }
+    third_party_settings: {  }
+    region: content
+  field_e_mail:
+    weight: 2
+    label: above
+    settings: {  }
+    third_party_settings: {  }
+    type: text_default
+    region: content
+  field_external_services:
+    weight: 5
+    label: above
+    settings:
+      trim_length: 80
+      url_only: false
+      url_plain: false
+      rel: ''
+      target: ''
+    third_party_settings: {  }
+    type: link
+    region: content
+  field_files:
+    weight: 3
+    label: above
+    settings:
+      use_description_as_link_text: true
+    third_party_settings: {  }
+    type: file_default
+    region: content
+  field_phone_number:
+    weight: 1
+    label: above
+    settings: {  }
+    third_party_settings: {  }
+    type: text_default
+    region: content
+hidden:
+  langcode: true
+  links: true

@@ -1,0 +1,8 @@
+/**
+ * Styles for node--full.html.twig
+ */
+.node--view-mode-full {
+  .field + .field {
+    margin-top: $spacer;
+  }
+}

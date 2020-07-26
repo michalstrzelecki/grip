@@ -1,0 +1,10 @@
+/**
+ * Styles for block--main-navigation.html.twig
+ */
+#block-main-navigation {
+  #menu--main {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+  }
+}

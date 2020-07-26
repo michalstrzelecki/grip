@@ -1,0 +1,11 @@
+uuid: 01253095-a7e0-44e3-8fb9-f3d7102c7074
+langcode: pl
+status: true
+dependencies:
+  config:
+    - node.type.clinical_examination
+id: node.clinical_examination
+target_entity_type_id: node
+target_bundle: clinical_examination
+default_langcode: site_default
+language_alterable: false

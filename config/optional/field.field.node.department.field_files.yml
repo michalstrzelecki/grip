@@ -1,0 +1,27 @@
+uuid: fb980624-6aaf-4208-9521-78ee54e3cdf0
+langcode: pl
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_files
+    - node.type.department
+  module:
+    - file
+id: node.department.field_files
+field_name: field_files
+entity_type: node
+bundle: department
+label: Files
+description: ''
+required: false
+translatable: true
+default_value: {  }
+default_value_callback: ''
+settings:
+  file_directory: department
+  file_extensions: 'pdf doc docx docm xls xlsx xlsm xml png gif jpg jpeg webp'
+  max_filesize: '64 MB'
+  description_field: true
+  handler: 'default:file'
+  handler_settings: {  }
+field_type: file

@@ -1,0 +1,22 @@
+uuid: 0a180db2-66ce-4744-ac29-c13841e24417
+langcode: pl
+status: true
+dependencies:
+  module:
+    - system
+  theme:
+    - grip
+_core:
+  default_config_hash: KHQIJ7Vfl25lTjzIc7qIvnuistt-Mw2O0kG4jCofmkI
+id: grip_messages
+theme: grip
+region: content
+weight: -14
+provider: null
+plugin: system_messages_block
+settings:
+  id: system_messages_block
+  label: 'Status messages'
+  provider: system
+  label_display: '0'
+visibility: {  }

@@ -1,0 +1,29 @@
+uuid: ba232b55-166e-4c50-a966-04707e9a0b5f
+langcode: pl
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_featured_image
+    - media.type.image
+    - node.type.clinic
+id: node.clinic.field_featured_image
+field_name: field_featured_image
+entity_type: node
+bundle: clinic
+label: 'Featured photo'
+description: ''
+required: false
+translatable: true
+default_value: {  }
+default_value_callback: ''
+settings:
+  handler: 'default:media'
+  handler_settings:
+    target_bundles:
+      image: image
+    sort:
+      field: created
+      direction: DESC
+    auto_create: false
+    auto_create_bundle: ''
+field_type: entity_reference

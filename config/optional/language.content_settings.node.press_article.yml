@@ -1,0 +1,11 @@
+uuid: a62125d3-d928-46fa-af65-136c42ea8281
+langcode: pl
+status: true
+dependencies:
+  config:
+    - node.type.press_article
+id: node.press_article
+target_entity_type_id: node
+target_bundle: press_article
+default_langcode: site_default
+language_alterable: false

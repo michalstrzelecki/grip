@@ -1,0 +1,25 @@
+/**
+ * Styles for lists.
+ */
+ul {
+  &.inline li {
+    padding: 0;
+  }
+
+  &.menu {
+    margin: 0;
+
+    .menu-item a {
+      &::before {
+        @extend .fas, .fa-xxs, .mr-2;
+        content: fa-content($fa-var-circle);
+      }
+    }
+  }
+}
+
+.block-views ul, ul.menu {
+  li a {
+    @include size-tap-targets();
+  }
+}

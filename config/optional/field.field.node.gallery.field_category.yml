@@ -1,0 +1,29 @@
+uuid: a8b7f656-b9bf-46fb-9c5f-41d285a19499
+langcode: pl
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_category
+    - node.type.gallery
+    - taxonomy.vocabulary.galleries
+id: node.gallery.field_category
+field_name: field_category
+entity_type: node
+bundle: gallery
+label: Category
+description: ''
+required: true
+translatable: true
+default_value: {  }
+default_value_callback: ''
+settings:
+  handler: 'default:taxonomy_term'
+  handler_settings:
+    target_bundles:
+      galleries: galleries
+    sort:
+      field: name
+      direction: asc
+    auto_create: false
+    auto_create_bundle: ''
+field_type: entity_reference

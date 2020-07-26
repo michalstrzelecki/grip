@@ -1,0 +1,11 @@
+uuid: ecac1573-6427-47ae-84ef-ec8f26ae3c2d
+langcode: pl
+status: true
+dependencies:
+  config:
+    - node.type.advertisement
+id: node.advertisement
+target_entity_type_id: node
+target_bundle: advertisement
+default_langcode: site_default
+language_alterable: false

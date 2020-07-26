@@ -1,0 +1,8 @@
+/**
+ * Styles for page.html.twig
+ */
+.page-title {
+  @include divider();
+  position: relative;
+  padding-bottom: $spacer / 2;
+}

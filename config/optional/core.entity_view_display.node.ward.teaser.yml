@@ -1,0 +1,63 @@
+uuid: 78d900a3-8ca6-410a-9e0c-c5f3ba70c4e4
+langcode: pl
+status: true
+dependencies:
+  config:
+    - core.entity_view_mode.node.teaser
+    - field.field.node.ward.body
+    - field.field.node.ward.field_address
+    - field.field.node.ward.field_e_mail
+    - field.field.node.ward.field_featured_image
+    - field.field.node.ward.field_files
+    - field.field.node.ward.field_phone_number
+    - field.field.node.ward.field_range_of_services
+    - field.field.node.ward.field_see_more
+    - field.field.node.ward.field_staff
+    - field.field.node.ward.field_tags
+    - node.type.ward
+  module:
+    - text
+    - user
+id: node.ward.teaser
+targetEntityType: node
+bundle: ward
+mode: teaser
+content:
+  body:
+    label: hidden
+    type: text_summary_or_trimmed
+    weight: 1
+    settings:
+      trim_length: 600
+    third_party_settings: {  }
+    region: content
+  field_featured_image:
+    type: entity_reference_entity_view
+    weight: 0
+    region: content
+    label: hidden
+    settings:
+      view_mode: full
+      link: false
+    third_party_settings: {  }
+  field_phone_number:
+    type: text_default
+    weight: 2
+    region: content
+    label: above
+    settings: {  }
+    third_party_settings: {  }
+  links:
+    weight: 3
+    region: content
+    settings: {  }
+    third_party_settings: {  }
+hidden:
+  field_address: true
+  field_e_mail: true
+  field_files: true
+  field_range_of_services: true
+  field_see_more: true
+  field_staff: true
+  field_tags: true
+  langcode: true

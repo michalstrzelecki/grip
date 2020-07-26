@@ -1,0 +1,11 @@
+uuid: e08d0f4c-4084-4e1c-a89c-8595255f0369
+langcode: pl
+status: true
+dependencies:
+  config:
+    - taxonomy.vocabulary.projects
+id: taxonomy_term.projects
+target_entity_type_id: taxonomy_term
+target_bundle: projects
+default_langcode: site_default
+language_alterable: false

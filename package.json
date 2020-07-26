@@ -1,0 +1,38 @@
+{
+    "title": "Grip theme for Drupal",
+    "name": "grip",
+    "version": "0.0.1",
+    "scripts": {
+        "start": "gulp watch",
+        "build": "gulp build"
+    },
+    "description": "Another starter theme for Drupal",
+    "keywords": [
+        "css",
+        "sass",
+        "html",
+        "responsive",
+        "theme"
+    ],
+    "author": "Michał Strzelecki",
+    "dependencies": {
+        "@fortawesome/fontawesome-free": "^5.12.0",
+        "bootstrap": "^4.4.0",
+        "jquery": "3.3.1",
+        "popper.js": "^1.16.0"
+    },
+    "devDependencies": {
+        "@babel/core": "^7.10.5",
+        "@babel/preset-env": "^7.10.4",
+        "browser-sync": "^2.26.7",
+        "gulp": "^4.0.2",
+        "gulp-autoprefixer": "^7.0.1",
+        "gulp-babel": "^8.0.0",
+        "gulp-clean-css": "^4.3.0",
+        "gulp-concat": "^2.6.1",
+        "gulp-plumber": "^1.2.1",
+        "gulp-rename": "^2.0.0",
+        "gulp-sass": "^4.1.0",
+        "gulp-uglify": "^3.0.2"
+    }
+}

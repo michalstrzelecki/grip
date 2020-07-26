@@ -1,0 +1,21 @@
+uuid: 6acbd95a-2774-4ad8-8ddc-176c21a9eb2f
+langcode: pl
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_staff
+    - node.type.department
+  module:
+    - text
+id: node.department.field_staff
+field_name: field_staff
+entity_type: node
+bundle: department
+label: Staff
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: text

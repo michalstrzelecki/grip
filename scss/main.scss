@@ -1,0 +1,58 @@
+// Fonts loading
+@import url('https://fonts.googleapis.com/css?family=Source+Sans+Pro:200,200i,300,300i,400,400i,600,600i,700,700i,900,900i&subset=latin-ext');
+
+// Import Bootstrap
+@import "./bootstrap/bootstrap";
+
+// Import Fontawesome
+@import "./fontawesome/fontawesome";
+@import "./fontawesome/regular";
+@import "./fontawesome/solid";
+
+// Import fonts
+@import url("https://fonts.googleapis.com/css?family=Courgette");
+
+// Import custom styles
+@import "./mixins";
+@import "./block";
+@import "./block-accessibility-controls";
+@import "./block--main-navigation";
+@import "./block-main-navigation-tiles";
+@import "./block-search-form";
+@import "./block--system-branding-block";
+@import "./block--system-menu-block";
+@import "./block--top-navigation";
+@import "./breadcrumb";
+@import "./field";
+@import "./field--field-tags";
+@import "./field--node--field-see-more";
+@import "./lists";
+@import "./menu--main";
+@import "./node";
+@import "./node--card";
+@import "./node--full";
+@import "./node--gallery";
+@import "./node--gallery--teaser";
+@import "./node--horizontal-card";
+@import "./node--vertical-card";
+@import "./page";
+@import "./pager";
+@import "./region--bottom-header";
+@import "./region--featured-bottom-first";
+@import "./region--featured-bottom-second";
+@import "./region--featured-bottom-third";
+@import "./region--header";
+@import "./search-form";
+@import "./search-results";
+@import "./utilities";
+@import "./views";
+@import "./view-display-id-page_phone_numbers";
+
+// TODO: to refactor
+p {
+  word-break: break-word;
+}
+
+.feed-icons {
+  float: right;
+}

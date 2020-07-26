@@ -1,0 +1,25 @@
+uuid: 52c2815e-6d3d-4293-ad46-fa9715b09256
+langcode: pl
+status: true
+dependencies:
+  config:
+    - system.menu.for-employees
+  module:
+    - system
+  theme:
+    - grip
+id: for_employees
+theme: grip
+region: featured_bottom_third
+weight: 0
+provider: null
+plugin: 'system_menu_block:for-employees'
+settings:
+  id: 'system_menu_block:for-employees'
+  label: 'For staff'
+  provider: system
+  label_display: visible
+  level: 1
+  depth: 1
+  expand_all_items: false
+visibility: {  }

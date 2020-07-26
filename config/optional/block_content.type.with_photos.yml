@@ -1,0 +1,8 @@
+uuid: 466385f6-b962-41a3-9b6b-b7eb51835497
+langcode: pl
+status: true
+dependencies: {  }
+id: with_photos
+label: 'Block with photos'
+revision: 0
+description: ''

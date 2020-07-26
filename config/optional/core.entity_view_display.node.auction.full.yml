@@ -1,0 +1,92 @@
+uuid: 17dffda4-70f6-4012-a4f5-ff8d3a391b05
+langcode: pl
+status: true
+dependencies:
+  config:
+    - core.entity_view_mode.node.full
+    - field.field.node.auction.body
+    - field.field.node.auction.field_case_number
+    - field.field.node.auction.field_category
+    - field.field.node.auction.field_e_mail
+    - field.field.node.auction.field_end_date
+    - field.field.node.auction.field_files
+    - field.field.node.auction.field_is_completed
+    - field.field.node.auction.field_phone_number
+    - node.type.auction
+  module:
+    - datetime
+    - file
+    - text
+    - user
+id: node.auction.full
+targetEntityType: node
+bundle: auction
+mode: full
+content:
+  body:
+    label: hidden
+    type: text_default
+    weight: 1
+    settings: {  }
+    third_party_settings: {  }
+    region: content
+  field_case_number:
+    weight: 0
+    label: above
+    settings:
+      link_to_entity: false
+    third_party_settings: {  }
+    type: string
+    region: content
+  field_category:
+    type: entity_reference_label
+    weight: 2
+    region: content
+    label: above
+    settings:
+      link: true
+    third_party_settings: {  }
+  field_e_mail:
+    weight: 6
+    label: above
+    settings: {  }
+    third_party_settings: {  }
+    type: text_default
+    region: content
+  field_end_date:
+    weight: 3
+    label: above
+    settings:
+      format_type: medium
+      timezone_override: ''
+    third_party_settings: {  }
+    type: datetime_default
+    region: content
+  field_files:
+    weight: 7
+    label: above
+    settings:
+      use_description_as_link_text: true
+    third_party_settings: {  }
+    type: file_default
+    region: content
+  field_is_completed:
+    weight: 4
+    label: above
+    settings:
+      format: default
+      format_custom_false: ''
+      format_custom_true: ''
+    third_party_settings: {  }
+    type: boolean
+    region: content
+  field_phone_number:
+    weight: 5
+    label: above
+    settings: {  }
+    third_party_settings: {  }
+    type: text_default
+    region: content
+hidden:
+  langcode: true
+  links: true

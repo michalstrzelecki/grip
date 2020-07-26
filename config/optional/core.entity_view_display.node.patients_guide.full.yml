@@ -1,0 +1,85 @@
+uuid: 4f454292-fbbf-461b-8672-f79f510d89eb
+langcode: pl
+status: true
+dependencies:
+  config:
+    - core.entity_view_mode.node.full
+    - field.field.node.patients_guide.body
+    - field.field.node.patients_guide.field_e_mail
+    - field.field.node.patients_guide.field_external_services
+    - field.field.node.patients_guide.field_featured_image
+    - field.field.node.patients_guide.field_files
+    - field.field.node.patients_guide.field_phone_number
+    - field.field.node.patients_guide.field_tags
+    - node.type.patients_guide
+  module:
+    - file
+    - link
+    - text
+    - user
+id: node.patients_guide.full
+targetEntityType: node
+bundle: patients_guide
+mode: full
+content:
+  body:
+    label: hidden
+    type: text_default
+    weight: 1
+    settings: {  }
+    third_party_settings: {  }
+    region: content
+  field_e_mail:
+    weight: 3
+    label: above
+    settings: {  }
+    third_party_settings: {  }
+    type: text_default
+    region: content
+  field_external_services:
+    weight: 7
+    label: above
+    settings:
+      trim_length: 80
+      url_only: false
+      url_plain: false
+      rel: ''
+      target: ''
+    third_party_settings: {  }
+    type: link
+    region: content
+  field_featured_image:
+    type: entity_reference_entity_view
+    weight: 0
+    region: content
+    label: hidden
+    settings:
+      view_mode: full
+      link: false
+    third_party_settings: {  }
+  field_files:
+    weight: 4
+    label: above
+    settings:
+      use_description_as_link_text: true
+    third_party_settings: {  }
+    type: file_default
+    region: content
+  field_phone_number:
+    weight: 2
+    label: above
+    settings: {  }
+    third_party_settings: {  }
+    type: text_default
+    region: content
+  field_tags:
+    weight: 5
+    label: above
+    settings:
+      link: true
+    third_party_settings: {  }
+    type: entity_reference_label
+    region: content
+hidden:
+  langcode: true
+  links: true

@@ -1,0 +1,27 @@
+uuid: 16f5bffe-e6a0-4649-a6b1-806976fa1a43
+langcode: pl
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_files
+    - node.type.patients_guide
+  module:
+    - file
+id: node.patients_guide.field_files
+field_name: field_files
+entity_type: node
+bundle: patients_guide
+label: Files
+description: ''
+required: false
+translatable: true
+default_value: {  }
+default_value_callback: ''
+settings:
+  file_directory: patients_guide
+  file_extensions: 'pdf doc docx docm xls xlsx xlsm xml png gif jpg jpeg webp'
+  max_filesize: '64 MB'
+  description_field: true
+  handler: 'default:file'
+  handler_settings: {  }
+field_type: file

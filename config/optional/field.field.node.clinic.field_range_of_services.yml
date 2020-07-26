@@ -1,0 +1,21 @@
+uuid: c3574568-3b4f-466c-b8f7-cafdf90d74a0
+langcode: pl
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_range_of_services
+    - node.type.clinic
+  module:
+    - text
+id: node.clinic.field_range_of_services
+field_name: field_range_of_services
+entity_type: node
+bundle: clinic
+label: 'Range of services'
+description: ''
+required: false
+translatable: true
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: text_long

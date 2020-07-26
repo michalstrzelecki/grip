@@ -1,0 +1,25 @@
+uuid: 3bba71da-c544-45c0-88b4-96bff77b8ec9
+langcode: pl
+status: true
+dependencies:
+  content:
+    - 'block_content:basic:1fcb0797-febe-4ef5-93aa-5b1ea475bfe0'
+  module:
+    - block_content
+  theme:
+    - grip
+id: footer
+theme: grip
+region: footer
+weight: -13
+provider: null
+plugin: 'block_content:1fcb0797-febe-4ef5-93aa-5b1ea475bfe0'
+settings:
+  id: 'block_content:1fcb0797-febe-4ef5-93aa-5b1ea475bfe0'
+  label: Footer
+  provider: block_content
+  label_display: '0'
+  status: true
+  info: ''
+  view_mode: full
+visibility: {  }

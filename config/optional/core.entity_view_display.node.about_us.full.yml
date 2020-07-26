@@ -1,0 +1,79 @@
+uuid: 2697ce43-f556-4d44-bc5d-b8b0b94787ae
+langcode: pl
+status: true
+dependencies:
+  config:
+    - core.entity_view_mode.node.full
+    - field.field.node.about_us.body
+    - field.field.node.about_us.field_e_mail
+    - field.field.node.about_us.field_featured_image
+    - field.field.node.about_us.field_files
+    - field.field.node.about_us.field_phone_number
+    - field.field.node.about_us.field_staff
+    - field.field.node.about_us.field_tags
+    - node.type.about_us
+  module:
+    - file
+    - text
+    - user
+id: node.about_us.full
+targetEntityType: node
+bundle: about_us
+mode: full
+content:
+  body:
+    label: hidden
+    type: text_default
+    weight: 1
+    settings: {  }
+    third_party_settings: {  }
+    region: content
+  field_e_mail:
+    weight: 3
+    label: above
+    settings: {  }
+    third_party_settings: {  }
+    type: text_default
+    region: content
+  field_featured_image:
+    type: entity_reference_entity_view
+    weight: 0
+    region: content
+    label: hidden
+    settings:
+      view_mode: full
+      link: false
+    third_party_settings: {  }
+  field_files:
+    weight: 5
+    label: above
+    settings:
+      use_description_as_link_text: true
+    third_party_settings: {  }
+    type: file_default
+    region: content
+  field_phone_number:
+    weight: 2
+    label: above
+    settings: {  }
+    third_party_settings: {  }
+    type: text_default
+    region: content
+  field_staff:
+    type: text_default
+    weight: 4
+    region: content
+    label: above
+    settings: {  }
+    third_party_settings: {  }
+  field_tags:
+    weight: 6
+    label: above
+    settings:
+      link: true
+    third_party_settings: {  }
+    type: entity_reference_label
+    region: content
+hidden:
+  langcode: true
+  links: true

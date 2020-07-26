@@ -1,0 +1,10 @@
+uuid: 484bb25a-a3a3-4459-8528-80a3fbd473ed
+langcode: pl
+status: true
+dependencies: {  }
+_core:
+  default_config_hash: BCM-vV1zzRaLHN18dqAR_CuGOj8AFJvTx7BKl_8Gcxc
+id: tools
+label: Tools
+description: ''
+locked: true

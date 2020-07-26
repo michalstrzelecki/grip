@@ -1,0 +1,21 @@
+uuid: 035f22e7-ec8c-4778-b90b-4f1b841027ff
+langcode: pl
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_e_mail
+    - node.type.department
+  module:
+    - text
+id: node.department.field_e_mail
+field_name: field_e_mail
+entity_type: node
+bundle: department
+label: E-mail
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: text

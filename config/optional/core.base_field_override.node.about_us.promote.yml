@@ -1,0 +1,22 @@
+uuid: 69023b95-091f-4681-81e1-8cc99c252cb4
+langcode: pl
+status: true
+dependencies:
+  config:
+    - node.type.about_us
+id: node.about_us.promote
+field_name: promote
+entity_type: node
+bundle: about_us
+label: 'Promowany na stronie głównej'
+description: ''
+required: false
+translatable: true
+default_value:
+  -
+    value: 0
+default_value_callback: ''
+settings:
+  on_label: Włączony
+  off_label: Wyłączony
+field_type: boolean

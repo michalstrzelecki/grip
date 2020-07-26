@@ -1,0 +1,27 @@
+uuid: 2d4eba8a-5251-4131-a2f5-e3f3c46e6291
+langcode: pl
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_files
+    - node.type.clinic
+  module:
+    - file
+id: node.clinic.field_files
+field_name: field_files
+entity_type: node
+bundle: clinic
+label: Files
+description: ''
+required: false
+translatable: true
+default_value: {  }
+default_value_callback: ''
+settings:
+  file_directory: clinic
+  file_extensions: 'pdf doc docx docm xls xlsx xlsm xml png gif jpg jpeg webp'
+  max_filesize: '64 MB'
+  description_field: true
+  handler: 'default:file'
+  handler_settings: {  }
+field_type: file

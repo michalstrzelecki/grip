@@ -1,0 +1,21 @@
+uuid: cd55fa99-eef8-49c3-ad1e-a010005ad941
+langcode: pl
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_phone_number
+    - node.type.patients_guide
+  module:
+    - text
+id: node.patients_guide.field_phone_number
+field_name: field_phone_number
+entity_type: node
+bundle: patients_guide
+label: 'Phone numbers'
+description: ''
+required: false
+translatable: true
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: text

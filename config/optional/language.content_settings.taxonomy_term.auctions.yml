@@ -1,0 +1,11 @@
+uuid: 7588d6ad-19c7-473e-aa30-936ba0f76f15
+langcode: pl
+status: true
+dependencies:
+  config:
+    - taxonomy.vocabulary.auctions
+id: taxonomy_term.auctions
+target_entity_type_id: taxonomy_term
+target_bundle: auctions
+default_langcode: site_default
+language_alterable: false

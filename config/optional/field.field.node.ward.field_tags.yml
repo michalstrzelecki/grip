@@ -1,0 +1,29 @@
+uuid: c27af5a2-8800-489f-a9e3-4f55f2d3b248
+langcode: pl
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_tags
+    - node.type.ward
+    - taxonomy.vocabulary.tags
+id: node.ward.field_tags
+field_name: field_tags
+entity_type: node
+bundle: ward
+label: 'Keywords'
+description: ''
+required: false
+translatable: true
+default_value: {  }
+default_value_callback: ''
+settings:
+  handler: 'default:taxonomy_term'
+  handler_settings:
+    target_bundles:
+      tags: tags
+    sort:
+      field: name
+      direction: asc
+    auto_create: true
+    auto_create_bundle: ''
+field_type: entity_reference

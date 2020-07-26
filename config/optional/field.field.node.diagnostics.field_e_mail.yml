@@ -1,0 +1,21 @@
+uuid: aa68e44b-cc47-4ec2-bedb-f760bb865883
+langcode: pl
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_e_mail
+    - node.type.diagnostics
+  module:
+    - text
+id: node.diagnostics.field_e_mail
+field_name: field_e_mail
+entity_type: node
+bundle: diagnostics
+label: E-mail
+description: ''
+required: false
+translatable: true
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: text

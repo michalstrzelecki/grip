@@ -1,0 +1,77 @@
+uuid: 22fa68bd-9ec2-4193-809f-cede703151a1
+langcode: pl
+status: true
+dependencies:
+  config:
+    - core.entity_view_mode.node.last_added
+    - field.field.node.auction.body
+    - field.field.node.auction.field_case_number
+    - field.field.node.auction.field_category
+    - field.field.node.auction.field_e_mail
+    - field.field.node.auction.field_end_date
+    - field.field.node.auction.field_files
+    - field.field.node.auction.field_is_completed
+    - field.field.node.auction.field_phone_number
+    - node.type.auction
+  module:
+    - datetime
+    - text
+    - user
+id: node.auction.last_added
+targetEntityType: node
+bundle: auction
+mode: last_added
+content:
+  body:
+    label: hidden
+    type: text_summary_or_trimmed
+    weight: 1
+    settings:
+      trim_length: 600
+    third_party_settings: {  }
+    region: content
+  field_case_number:
+    weight: 0
+    label: inline
+    settings:
+      link_to_entity: false
+    third_party_settings: {  }
+    type: string
+    region: content
+  field_category:
+    weight: 2
+    label: inline
+    settings:
+      link: true
+    third_party_settings: {  }
+    type: entity_reference_label
+    region: content
+  field_end_date:
+    weight: 3
+    label: inline
+    settings:
+      format_type: medium
+      timezone_override: ''
+    third_party_settings: {  }
+    type: datetime_default
+    region: content
+  field_is_completed:
+    weight: 4
+    label: inline
+    settings:
+      format: default
+      format_custom_false: ''
+      format_custom_true: ''
+    third_party_settings: {  }
+    type: boolean
+    region: content
+  links:
+    weight: 5
+    region: content
+    settings: {  }
+    third_party_settings: {  }
+hidden:
+  field_e_mail: true
+  field_files: true
+  field_phone_number: true
+  langcode: true

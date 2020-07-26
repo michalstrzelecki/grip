@@ -1,0 +1,33 @@
+{% extends "block.html.twig" %}
+{#
+/**
+ * @file
+ * Theme override for a branding block.
+ *
+ * Each branding element variable (logo, name, slogan) is only available if
+ * enabled in the block configuration.
+ *
+ * Available variables:
+ * - site_logo: Logo for site as defined in Appearance or theme settings.
+ * - site_name: Name for site as defined in Site information settings.
+ * - site_slogan: Slogan for site as defined in Site information settings.
+ */
+#}
+{% block content %}
+  <div class="container mt-3 mb-lg-3">
+    <div class="text-break d-flex flex-row flex-wrap align-items-center align-items-lg-start justify-content-center justify-content-lg-start">
+      {% if site_logo %}
+        <img alt="KO-MED Centra Kliniczne" class="mx-2 my-2 my-lg-0" src="/sites/grip.pl/files/grip_pl_theme_assets/logos/ko-med_logo.png" height="48" />
+        <a href="{{ path('<front>') }}" title="{{ 'Home'|t }}" rel="home" class="site-logo mx-2 my-2 my-lg-0">
+          <img src="{{ site_logo }}" alt="{{ 'Home'|t }}" height="48" />
+        </a>
+      {% endif %}
+      {% if site_name %}
+        <div class="site-branding-text d-flex flex-column align-items-center align-items-lg-start mt-3 mt-lg-0 mx-2">
+          <a href="{{ path('<front>') }}" title="{{ 'Home'|t }}" rel="home" class="site-name font-weight-bold d-flex m-0">{{ site_name }}</a>
+          <p id="site-slogan" class="font-weight-light text-center d-flex m-0">{{ site_slogan }}</p>
+        </div>
+      {% endif %}
+    </div>
+  </div>
+{% endblock %}

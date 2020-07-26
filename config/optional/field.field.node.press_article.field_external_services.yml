@@ -1,0 +1,23 @@
+uuid: 9d0f7256-1b9a-43ff-b4f3-ed3bda4a73f0
+langcode: pl
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_external_services
+    - node.type.press_article
+  module:
+    - link
+id: node.press_article.field_external_services
+field_name: field_external_services
+entity_type: node
+bundle: press_article
+label: 'External websites'
+description: ''
+required: false
+translatable: true
+default_value: {  }
+default_value_callback: ''
+settings:
+  link_type: 16
+  title: 2
+field_type: link

@@ -1,0 +1,18 @@
+uuid: 9c7d479b-cb5e-41eb-998d-797264b251f1
+langcode: pl
+status: true
+dependencies:
+  module:
+    - menu_ui
+third_party_settings:
+  menu_ui:
+    available_menus:
+      - main
+    parent: 'main:views_view:views.main_menu.page_ward'
+name: Ward
+type: ward
+description: ''
+help: ''
+new_revision: true
+preview_mode: 1
+display_submitted: true

@@ -1,0 +1,20 @@
+/**
+ * Styles for input--submit--search-block-form.html.twig
+ */
+#block-search-form {
+  background-color: $white;
+
+  @include media-breakpoint-up(lg) {
+    padding: $spacer;
+  }
+
+  .form-submit {
+    border-radius: 0 $border-radius $border-radius 0;
+  }
+}
+
+.path-frontpage #block-search-form {
+  @include media-breakpoint-up(lg) {
+    margin: $spacer;
+  }
+}

@@ -1,0 +1,25 @@
+uuid: 49fecc38-615e-4a8c-ba9d-8cbe8c9deb19
+langcode: pl
+status: true
+dependencies:
+  module:
+    - system
+  theme:
+    - grip
+id: breadcrumbs
+theme: grip
+region: top_content
+weight: 0
+provider: null
+plugin: system_breadcrumb_block
+settings:
+  id: system_breadcrumb_block
+  label: Breadcrumby
+  provider: system
+  label_display: '0'
+visibility:
+  request_path:
+    id: request_path
+    pages: '<front>'
+    negate: true
+    context_mapping: {  }

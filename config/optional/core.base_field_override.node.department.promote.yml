@@ -1,0 +1,22 @@
+uuid: af7638ec-8a1b-4590-8198-492f810df116
+langcode: pl
+status: true
+dependencies:
+  config:
+    - node.type.department
+id: node.department.promote
+field_name: promote
+entity_type: node
+bundle: department
+label: 'Promoted on the home page'
+description: ''
+required: false
+translatable: true
+default_value:
+  -
+    value: 0
+default_value_callback: ''
+settings:
+  on_label: Włączony
+  off_label: Wyłączony
+field_type: boolean

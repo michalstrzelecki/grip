@@ -1,0 +1,21 @@
+uuid: bb7fc6b7-93ae-427e-bee9-9045c8f9b107
+langcode: pl
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_staff
+    - node.type.teams
+  module:
+    - text
+id: node.teams.field_staff
+field_name: field_staff
+entity_type: node
+bundle: teams
+label: Staff
+description: ''
+required: false
+translatable: true
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: text

@@ -1,0 +1,21 @@
+uuid: 158801ab-aac6-4b12-96b6-4ffe5022f8c1
+langcode: pl
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_staff
+    - node.type.diagnostics
+  module:
+    - text
+id: node.diagnostics.field_staff
+field_name: field_staff
+entity_type: node
+bundle: diagnostics
+label: Staff
+description: ''
+required: false
+translatable: true
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: text

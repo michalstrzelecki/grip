@@ -1,0 +1,47 @@
+uuid: e42485b2-e668-4a87-8f5f-05cc2abe0b16
+langcode: pl
+status: true
+dependencies:
+  config:
+    - core.entity_view_mode.node.vertical_card
+    - field.field.node.patients_guide.body
+    - field.field.node.patients_guide.field_e_mail
+    - field.field.node.patients_guide.field_external_services
+    - field.field.node.patients_guide.field_featured_image
+    - field.field.node.patients_guide.field_files
+    - field.field.node.patients_guide.field_phone_number
+    - field.field.node.patients_guide.field_tags
+    - node.type.patients_guide
+  module:
+    - text
+    - user
+id: node.patients_guide.vertical_card
+targetEntityType: node
+bundle: patients_guide
+mode: vertical_card
+content:
+  body:
+    label: hidden
+    type: text_summary_or_trimmed
+    weight: 1
+    settings:
+      trim_length: 300
+    third_party_settings: {  }
+    region: content
+  field_featured_image:
+    weight: 0
+    label: hidden
+    settings:
+      view_mode: url
+      link: false
+    third_party_settings: {  }
+    type: entity_reference_entity_view
+    region: content
+hidden:
+  field_e_mail: true
+  field_external_services: true
+  field_files: true
+  field_phone_number: true
+  field_tags: true
+  langcode: true
+  links: true

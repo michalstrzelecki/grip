@@ -1,0 +1,22 @@
+uuid: 9f002ad3-9a44-428f-9a61-c909b786dc54
+langcode: pl
+status: true
+dependencies:
+  config:
+    - node.type.clinic
+id: node.clinic.promote
+field_name: promote
+entity_type: node
+bundle: clinic
+label: 'Promoted on the home page'
+description: ''
+required: false
+translatable: true
+default_value:
+  -
+    value: 0
+default_value_callback: ''
+settings:
+  on_label: Włączony
+  off_label: Wyłączony
+field_type: boolean

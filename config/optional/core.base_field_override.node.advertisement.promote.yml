@@ -1,0 +1,22 @@
+uuid: 679bb4ef-1c09-4158-a855-6013bdde1319
+langcode: pl
+status: true
+dependencies:
+  config:
+    - node.type.advertisement
+id: node.advertisement.promote
+field_name: promote
+entity_type: node
+bundle: advertisement
+label: 'Promoted on the home page'
+description: ''
+required: false
+translatable: true
+default_value:
+  -
+    value: 1
+default_value_callback: ''
+settings:
+  on_label: Włączony
+  off_label: Wyłączony
+field_type: boolean

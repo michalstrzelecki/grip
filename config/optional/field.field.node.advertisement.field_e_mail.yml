@@ -1,0 +1,21 @@
+uuid: 2eefd7d9-8df9-474e-be6a-4476e39ec00a
+langcode: pl
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_e_mail
+    - node.type.advertisement
+  module:
+    - text
+id: node.advertisement.field_e_mail
+field_name: field_e_mail
+entity_type: node
+bundle: advertisement
+label: E-mail
+description: ''
+required: false
+translatable: true
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: text

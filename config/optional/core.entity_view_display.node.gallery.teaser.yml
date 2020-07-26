@@ -1,0 +1,58 @@
+uuid: d51bab53-1126-4142-85f0-30bea886a362
+langcode: pl
+status: true
+dependencies:
+  config:
+    - core.entity_view_mode.node.teaser
+    - field.field.node.gallery.body
+    - field.field.node.gallery.field_category
+    - field.field.node.gallery.field_featured_image
+    - field.field.node.gallery.field_photos
+    - field.field.node.gallery.field_see_more
+    - field.field.node.gallery.field_tags
+    - image.style.medium
+    - node.type.gallery
+  module:
+    - image
+    - text
+    - user
+id: node.gallery.teaser
+targetEntityType: node
+bundle: gallery
+mode: teaser
+content:
+  body:
+    label: hidden
+    type: text_summary_or_trimmed
+    weight: 0
+    settings:
+      trim_length: 600
+    third_party_settings: {  }
+    region: content
+  field_category:
+    type: entity_reference_label
+    weight: 1
+    region: content
+    label: inline
+    settings:
+      link: true
+    third_party_settings: {  }
+  field_photos:
+    type: image
+    weight: 2
+    region: content
+    label: hidden
+    settings:
+      image_style: medium
+      image_link: content
+    third_party_settings: {  }
+  links:
+    weight: 3
+    region: content
+    settings: {  }
+    third_party_settings: {  }
+hidden:
+  field_featured_image: true
+  field_see_more: true
+  field_tags: true
+  langcode: true

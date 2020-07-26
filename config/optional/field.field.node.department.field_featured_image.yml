@@ -1,0 +1,29 @@
+uuid: e165e141-2798-4c3e-b330-23c9a68a6680
+langcode: pl
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_featured_image
+    - media.type.image
+    - node.type.department
+id: node.department.field_featured_image
+field_name: field_featured_image
+entity_type: node
+bundle: department
+label: 'Featured photo'
+description: ''
+required: false
+translatable: true
+default_value: {  }
+default_value_callback: ''
+settings:
+  handler: 'default:media'
+  handler_settings:
+    target_bundles:
+      image: image
+    sort:
+      field: created
+      direction: DESC
+    auto_create: false
+    auto_create_bundle: ''
+field_type: entity_reference

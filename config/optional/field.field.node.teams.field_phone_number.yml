@@ -1,0 +1,21 @@
+uuid: ebb0517a-f003-4afb-880a-a9f9e12c3f5a
+langcode: pl
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_phone_number
+    - node.type.teams
+  module:
+    - text
+id: node.teams.field_phone_number
+field_name: field_phone_number
+entity_type: node
+bundle: teams
+label: 'Phone numbers'
+description: ''
+required: false
+translatable: true
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: text

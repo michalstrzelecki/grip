@@ -1,0 +1,17 @@
+uuid: 6b9272d2-0292-443a-b911-b34818f883ee
+langcode: pl
+status: true
+dependencies:
+  module:
+    - menu_ui
+third_party_settings:
+  menu_ui:
+    available_menus: {  }
+    parent: ''
+name: Auction
+type: auction
+description: ''
+help: ''
+new_revision: true
+preview_mode: 1
+display_submitted: true

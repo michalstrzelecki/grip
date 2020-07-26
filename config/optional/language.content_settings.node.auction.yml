@@ -1,0 +1,11 @@
+uuid: 533c355c-d7eb-4827-a67e-a36e0b1fa7fd
+langcode: pl
+status: true
+dependencies:
+  config:
+    - node.type.auction
+id: node.auction
+target_entity_type_id: node
+target_bundle: auction
+default_langcode: site_default
+language_alterable: false

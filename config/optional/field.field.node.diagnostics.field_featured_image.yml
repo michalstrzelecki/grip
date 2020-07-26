@@ -1,0 +1,29 @@
+uuid: cdccca7a-3cb5-47be-91e2-7b45cdc90ae5
+langcode: pl
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_featured_image
+    - media.type.image
+    - node.type.diagnostics
+id: node.diagnostics.field_featured_image
+field_name: field_featured_image
+entity_type: node
+bundle: diagnostics
+label: 'Featured photo'
+description: ''
+required: false
+translatable: true
+default_value: {  }
+default_value_callback: ''
+settings:
+  handler: 'default:media'
+  handler_settings:
+    target_bundles:
+      image: image
+    sort:
+      field: created
+      direction: DESC
+    auto_create: false
+    auto_create_bundle: ''
+field_type: entity_reference

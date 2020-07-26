@@ -1,0 +1,88 @@
+uuid: a0bba9da-0be6-4e95-93ae-4e5927a98d80
+langcode: pl
+status: true
+dependencies:
+  config:
+    - field.field.node.press_article.body
+    - field.field.node.press_article.field_external_services
+    - field.field.node.press_article.field_featured_image
+    - field.field.node.press_article.field_files
+    - field.field.node.press_article.field_remote_video
+    - field.field.node.press_article.field_see_more
+    - field.field.node.press_article.field_tags
+    - node.type.press_article
+  module:
+    - file
+    - link
+    - text
+    - user
+id: node.press_article.default
+targetEntityType: node
+bundle: press_article
+mode: default
+content:
+  body:
+    label: hidden
+    type: text_default
+    weight: 1
+    settings: {  }
+    third_party_settings: {  }
+    region: content
+  field_external_services:
+    weight: 5
+    label: above
+    settings:
+      trim_length: 80
+      url_only: false
+      url_plain: false
+      rel: ''
+      target: ''
+    third_party_settings: {  }
+    type: link
+    region: content
+  field_featured_image:
+    weight: 0
+    label: hidden
+    settings:
+      view_mode: full
+      link: false
+    third_party_settings: {  }
+    type: entity_reference_entity_view
+    region: content
+  field_files:
+    weight: 2
+    label: above
+    settings:
+      use_description_as_link_text: true
+    third_party_settings: {  }
+    type: file_default
+    region: content
+  field_remote_video:
+    type: entity_reference_entity_view
+    weight: 3
+    label: visually_hidden
+    settings:
+      view_mode: default
+      link: false
+    third_party_settings: {  }
+    region: content
+  field_see_more:
+    weight: 6
+    label: above
+    settings:
+      view_mode: teaser
+      link: false
+    third_party_settings: {  }
+    type: entity_reference_entity_view
+    region: content
+  field_tags:
+    weight: 4
+    label: above
+    settings:
+      link: true
+    third_party_settings: {  }
+    type: entity_reference_label
+    region: content
+hidden:
+  langcode: true
+  links: true

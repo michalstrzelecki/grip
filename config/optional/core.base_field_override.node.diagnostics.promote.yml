@@ -1,0 +1,22 @@
+uuid: 3fa2798e-58f5-4b10-b689-7f7724de5e94
+langcode: pl
+status: true
+dependencies:
+  config:
+    - node.type.diagnostics
+id: node.diagnostics.promote
+field_name: promote
+entity_type: node
+bundle: diagnostics
+label: 'Promoted on the home page'
+description: ''
+required: false
+translatable: true
+default_value:
+  -
+    value: 0
+default_value_callback: ''
+settings:
+  on_label: Włączony
+  off_label: Wyłączony
+field_type: boolean

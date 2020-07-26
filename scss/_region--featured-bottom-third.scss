@@ -1,0 +1,22 @@
+/**
+ * Styles for region--featured-bottom-third.html.twig
+ */
+#region--featured-bottom-third--wrapper {
+  @include background-two-tone-diagonal($primary);
+
+  ul {
+    list-style-type: none;
+    padding: 0;
+  }
+
+  li {
+    a {
+      color: $light;
+
+      &::before {
+        @extend .fas, .fa-xxs, .mr-2;
+        content: fa-content($fa-var-circle);
+      }
+    }
+  }
+}

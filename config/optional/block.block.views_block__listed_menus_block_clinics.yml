@@ -1,0 +1,24 @@
+uuid: c4087f4f-fba9-40a9-924f-0468336a1233
+langcode: pl
+status: true
+dependencies:
+  config:
+    - views.view.listed_menus
+  module:
+    - views
+  theme:
+    - grip
+id: views_block__listed_menus_block_clinics
+theme: grip
+region: footer_first
+weight: -11
+provider: null
+plugin: 'views_block:listed_menus-block_clinics'
+settings:
+  id: 'views_block:listed_menus-block_clinics'
+  label: ''
+  provider: views
+  label_display: visible
+  views_label: ''
+  items_per_page: none
+visibility: {  }

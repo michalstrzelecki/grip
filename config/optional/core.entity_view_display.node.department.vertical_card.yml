@@ -1,0 +1,51 @@
+uuid: bda15a2c-2fcf-494d-85ec-5780f3b8d779
+langcode: pl
+status: true
+dependencies:
+  config:
+    - core.entity_view_mode.node.vertical_card
+    - field.field.node.department.body
+    - field.field.node.department.field_address
+    - field.field.node.department.field_e_mail
+    - field.field.node.department.field_featured_image
+    - field.field.node.department.field_files
+    - field.field.node.department.field_phone_number
+    - field.field.node.department.field_range_of_services
+    - field.field.node.department.field_staff
+    - field.field.node.department.field_tags
+    - node.type.department
+  module:
+    - text
+    - user
+id: node.department.vertical_card
+targetEntityType: node
+bundle: department
+mode: vertical_card
+content:
+  body:
+    label: hidden
+    type: text_summary_or_trimmed
+    weight: 1
+    settings:
+      trim_length: 300
+    third_party_settings: {  }
+    region: content
+  field_featured_image:
+    weight: 0
+    label: hidden
+    settings:
+      view_mode: url
+      link: false
+    third_party_settings: {  }
+    type: entity_reference_entity_view
+    region: content
+hidden:
+  field_address: true
+  field_e_mail: true
+  field_files: true
+  field_phone_number: true
+  field_range_of_services: true
+  field_staff: true
+  field_tags: true
+  langcode: true
+  links: true

@@ -1,0 +1,13 @@
+/**
+ * Styles for field--node--field-see-more.html.twig
+ */
+.field--name-field-see-more {
+  margin-top: $spacer * 4 !important;
+
+  & > .field__label {
+    @include divider();
+    @extend .h3;
+    position: relative;
+    padding-bottom: $spacer * 0.5;
+  }
+}

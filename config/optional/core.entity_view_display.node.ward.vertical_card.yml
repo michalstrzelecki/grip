@@ -1,0 +1,53 @@
+uuid: 147daea0-bc2a-40f9-a3ad-44504688b957
+langcode: pl
+status: true
+dependencies:
+  config:
+    - core.entity_view_mode.node.vertical_card
+    - field.field.node.ward.body
+    - field.field.node.ward.field_address
+    - field.field.node.ward.field_e_mail
+    - field.field.node.ward.field_featured_image
+    - field.field.node.ward.field_files
+    - field.field.node.ward.field_phone_number
+    - field.field.node.ward.field_range_of_services
+    - field.field.node.ward.field_see_more
+    - field.field.node.ward.field_staff
+    - field.field.node.ward.field_tags
+    - node.type.ward
+  module:
+    - text
+    - user
+id: node.ward.vertical_card
+targetEntityType: node
+bundle: ward
+mode: vertical_card
+content:
+  body:
+    label: hidden
+    type: text_summary_or_trimmed
+    weight: 1
+    settings:
+      trim_length: 300
+    third_party_settings: {  }
+    region: content
+  field_featured_image:
+    type: entity_reference_entity_view
+    weight: 0
+    label: hidden
+    settings:
+      view_mode: url
+      link: false
+    third_party_settings: {  }
+    region: content
+hidden:
+  field_address: true
+  field_e_mail: true
+  field_files: true
+  field_phone_number: true
+  field_range_of_services: true
+  field_see_more: true
+  field_staff: true
+  field_tags: true
+  langcode: true
+  links: true

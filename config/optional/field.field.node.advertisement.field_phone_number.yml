@@ -1,0 +1,21 @@
+uuid: 9cbec5af-6698-4147-b88d-7bbe6458dd8e
+langcode: pl
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_phone_number
+    - node.type.advertisement
+  module:
+    - text
+id: node.advertisement.field_phone_number
+field_name: field_phone_number
+entity_type: node
+bundle: advertisement
+  label: 'Phone numbers'
+description: ''
+required: false
+translatable: true
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: text

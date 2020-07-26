@@ -1,0 +1,47 @@
+uuid: f0b3f928-6b15-4c90-ab75-dfdc6f75f0f4
+langcode: pl
+status: true
+dependencies:
+  config:
+    - core.entity_view_mode.node.vertical_card
+    - field.field.node.project.body
+    - field.field.node.project.field_category
+    - field.field.node.project.field_external_services
+    - field.field.node.project.field_featured_image
+    - field.field.node.project.field_files
+    - field.field.node.project.field_see_more
+    - field.field.node.project.field_tags
+    - node.type.project
+  module:
+    - text
+    - user
+id: node.project.vertical_card
+targetEntityType: node
+bundle: project
+mode: vertical_card
+content:
+  body:
+    label: hidden
+    type: text_summary_or_trimmed
+    weight: 1
+    settings:
+      trim_length: 300
+    third_party_settings: {  }
+    region: content
+  field_featured_image:
+    weight: 0
+    label: hidden
+    settings:
+      view_mode: url
+      link: false
+    third_party_settings: {  }
+    type: entity_reference_entity_view
+    region: content
+hidden:
+  field_category: true
+  field_external_services: true
+  field_files: true
+  field_see_more: true
+  field_tags: true
+  langcode: true
+  links: true

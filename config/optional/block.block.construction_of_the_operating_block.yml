@@ -1,0 +1,25 @@
+uuid: ab91e597-22e6-43e5-8a69-215c4d954fe9
+langcode: pl
+status: true
+dependencies:
+  content:
+    - 'block_content:with_photos:87b275b1-fc0b-44e8-a6cc-18314433e12a'
+  module:
+    - block_content
+  theme:
+    - grip
+id: construction_of_the_operating_block
+theme: grip
+region: featured_bottom_first
+weight: -10
+provider: null
+plugin: 'block_content:87b275b1-fc0b-44e8-a6cc-18314433e12a'
+settings:
+  id: 'block_content:87b275b1-fc0b-44e8-a6cc-18314433e12a'
+  label: 'EXPANSION OF THE HOSPITAL BY BUILDING AN OPERATING UNIT'
+  provider: block_content
+  label_display: visible
+  status: true
+  info: ''
+  view_mode: full
+visibility: {  }

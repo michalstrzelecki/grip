@@ -1,0 +1,54 @@
+uuid: 28ff66a5-8fbe-473e-87aa-8252e4084998
+langcode: pl
+status: true
+dependencies:
+  config:
+    - core.entity_view_mode.node.horizontal_card
+    - field.field.node.clinical_examination.body
+    - field.field.node.clinical_examination.field_e_mail
+    - field.field.node.clinical_examination.field_external_services
+    - field.field.node.clinical_examination.field_featured_image
+    - field.field.node.clinical_examination.field_files
+    - field.field.node.clinical_examination.field_phone_number
+    - field.field.node.clinical_examination.field_tags
+    - node.type.clinical_examination
+  module:
+    - text
+    - user
+id: node.clinical_examination.horizontal_card
+targetEntityType: node
+bundle: clinical_examination
+mode: horizontal_card
+content:
+  body:
+    label: hidden
+    type: text_summary_or_trimmed
+    weight: 1
+    settings:
+      trim_length: 300
+    third_party_settings: {  }
+    region: content
+  field_featured_image:
+    weight: 0
+    label: hidden
+    settings:
+      view_mode: url
+      link: false
+    third_party_settings: {  }
+    type: entity_reference_entity_view
+    region: content
+  field_tags:
+    type: entity_reference_label
+    weight: 2
+    region: content
+    label: hidden
+    settings:
+      link: true
+    third_party_settings: {  }
+hidden:
+  field_e_mail: true
+  field_external_services: true
+  field_files: true
+  field_phone_number: true
+  langcode: true
+  links: true

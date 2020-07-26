@@ -1,0 +1,25 @@
+uuid: dfdf50e6-d2cc-494a-9e75-14e13b62fce1
+langcode: pl
+status: true
+dependencies:
+  content:
+    - 'block_content:basic:7c449a13-d797-472d-94a6-c4dfb8f321ce'
+  module:
+    - block_content
+  theme:
+    - grip
+id: accomplished_projects
+theme: grip
+region: logos_first
+weight: 0
+provider: null
+plugin: 'block_content:7c449a13-d797-472d-94a6-c4dfb8f321ce'
+settings:
+  id: 'block_content:7c449a13-d797-472d-94a6-c4dfb8f321ce'
+  label: 'Implemented projects'
+  provider: block_content
+  label_display: visible
+  status: true
+  info: ''
+  view_mode: full
+visibility: {  }

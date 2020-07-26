@@ -1,0 +1,19 @@
+{#
+/**
+ * @file
+ * Theme override for an 'input' #type form element.
+ *
+ * Available variables:
+ * - attributes: A list of HTML attributes for the input element.
+ * - children: Optional additional rendered elements.
+ *
+ * @see template_preprocess_input()
+ */
+#}
+<input{{ attributes
+  .removeClass(['form-search'])
+  .removeAttribute(['size', 'value'])
+  .addClass(['form-control', 'border-box', 'border-0', 'rounded-0', 'bg-white'])
+  .setAttribute('id', 'header-search-form')
+  .setAttribute('placeholder', attributes.title)
+  .setAttribute('aria-label', attributes.title) }}/>{{ children }}

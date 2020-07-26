@@ -1,0 +1,23 @@
+uuid: ca3be8e0-b1b4-4ec5-9976-14281fb6f290
+langcode: pl
+status: true
+dependencies:
+  config:
+    - block_content.type.with_photos
+    - field.storage.block_content.field_is_text_on_the_right
+id: block_content.with_photos.field_is_text_on_the_right
+field_name: field_is_text_on_the_right
+entity_type: block_content
+bundle: with_photos
+label: 'Content on the right'
+description: ''
+required: false
+translatable: false
+default_value:
+  -
+    value: 0
+default_value_callback: ''
+settings:
+  on_label: 'Content on the right'
+  off_label: 'Content on the left'
+field_type: boolean

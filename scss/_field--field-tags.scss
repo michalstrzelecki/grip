@@ -1,0 +1,9 @@
+/**
+ * Styles for field--field-tags.html.twig
+ */
+.field--name-field-tags {
+  a {
+    @extend .badge, .badge-pill, .badge-primary;
+    color: $light;
+  }
+}

@@ -1,0 +1,24 @@
+uuid: c68cd7c8-928e-4bca-a577-435a64af1fb2
+langcode: pl
+status: true
+dependencies:
+  config:
+    - views.view.listed_menus
+  module:
+    - views
+  theme:
+    - grip
+id: views_block__listed_menus_block_wards
+theme: grip
+region: footer_first
+weight: -12
+provider: null
+plugin: 'views_block:listed_menus-block_wards'
+settings:
+  id: 'views_block:listed_menus-block_wards'
+  label: ''
+  provider: views
+  label_display: visible
+  views_label: ''
+  items_per_page: none
+visibility: {  }

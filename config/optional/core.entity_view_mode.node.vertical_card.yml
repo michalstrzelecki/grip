@@ -1,0 +1,10 @@
+uuid: ea06d5f4-85d7-442d-9eaf-5a354a152c20
+langcode: pl
+status: true
+dependencies:
+  module:
+    - node
+id: node.vertical_card
+label: 'Vertical card'
+targetEntityType: node
+cache: true

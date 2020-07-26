@@ -1,0 +1,47 @@
+uuid: 09d24aa6-79f1-4612-9543-7a54d168a4ed
+langcode: pl
+status: true
+dependencies:
+  config:
+    - core.entity_view_mode.node.vertical_card
+    - field.field.node.about_us.body
+    - field.field.node.about_us.field_e_mail
+    - field.field.node.about_us.field_featured_image
+    - field.field.node.about_us.field_files
+    - field.field.node.about_us.field_phone_number
+    - field.field.node.about_us.field_staff
+    - field.field.node.about_us.field_tags
+    - node.type.about_us
+  module:
+    - text
+    - user
+id: node.about_us.vertical_card
+targetEntityType: node
+bundle: about_us
+mode: vertical_card
+content:
+  body:
+    label: hidden
+    type: text_summary_or_trimmed
+    weight: 1
+    settings:
+      trim_length: 300
+    third_party_settings: {  }
+    region: content
+  field_featured_image:
+    weight: 0
+    label: hidden
+    settings:
+      view_mode: url
+      link: false
+    third_party_settings: {  }
+    type: entity_reference_entity_view
+    region: content
+hidden:
+  field_e_mail: true
+  field_files: true
+  field_phone_number: true
+  field_staff: true
+  field_tags: true
+  langcode: true
+  links: true

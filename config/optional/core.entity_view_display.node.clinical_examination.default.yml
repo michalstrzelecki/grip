@@ -1,0 +1,84 @@
+uuid: ff5c4f5e-7c97-4dd4-9d5c-92852c347c17
+langcode: pl
+status: true
+dependencies:
+  config:
+    - field.field.node.clinical_examination.body
+    - field.field.node.clinical_examination.field_e_mail
+    - field.field.node.clinical_examination.field_external_services
+    - field.field.node.clinical_examination.field_featured_image
+    - field.field.node.clinical_examination.field_files
+    - field.field.node.clinical_examination.field_phone_number
+    - field.field.node.clinical_examination.field_tags
+    - node.type.clinical_examination
+  module:
+    - file
+    - link
+    - text
+    - user
+id: node.clinical_examination.default
+targetEntityType: node
+bundle: clinical_examination
+mode: default
+content:
+  body:
+    label: hidden
+    type: text_default
+    weight: 1
+    settings: {  }
+    third_party_settings: {  }
+    region: content
+  field_e_mail:
+    weight: 2
+    label: above
+    settings: {  }
+    third_party_settings: {  }
+    type: text_default
+    region: content
+  field_external_services:
+    weight: 7
+    label: above
+    settings:
+      trim_length: 80
+      url_only: false
+      url_plain: false
+      rel: ''
+      target: ''
+    third_party_settings: {  }
+    type: link
+    region: content
+  field_featured_image:
+    weight: 0
+    label: above
+    settings:
+      view_mode: full
+      link: false
+    third_party_settings: {  }
+    type: entity_reference_entity_view
+    region: content
+  field_files:
+    weight: 4
+    label: above
+    settings:
+      use_description_as_link_text: true
+    third_party_settings: {  }
+    type: file_default
+    region: content
+  field_phone_number:
+    weight: 3
+    label: above
+    settings: {  }
+    third_party_settings: {  }
+    type: text_default
+    region: content
+  field_tags:
+    weight: 5
+    label: above
+    settings:
+      link: true
+    third_party_settings: {  }
+    type: entity_reference_label
+    region: content
+hidden:
+  langcode: true
+  links: true

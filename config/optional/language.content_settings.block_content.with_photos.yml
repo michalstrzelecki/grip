@@ -1,0 +1,11 @@
+uuid: befd151b-6831-4df9-8f56-e8e34d6831fa
+langcode: pl
+status: true
+dependencies:
+  config:
+    - block_content.type.with_photos
+id: block_content.with_photos
+target_entity_type_id: block_content
+target_bundle: with_photos
+default_langcode: site_default
+language_alterable: false

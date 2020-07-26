@@ -1,0 +1,86 @@
+uuid: e5f141f8-e1e3-47a9-a002-de13b966a310
+langcode: pl
+status: true
+dependencies:
+  config:
+    - field.field.node.teams.body
+    - field.field.node.teams.field_e_mail
+    - field.field.node.teams.field_featured_image
+    - field.field.node.teams.field_files
+    - field.field.node.teams.field_phone_number
+    - field.field.node.teams.field_range_of_services
+    - field.field.node.teams.field_staff
+    - field.field.node.teams.field_tags
+    - node.type.teams
+  module:
+    - file
+    - text
+    - user
+id: node.teams.default
+targetEntityType: node
+bundle: teams
+mode: default
+content:
+  body:
+    label: hidden
+    type: text_default
+    weight: 1
+    settings: {  }
+    third_party_settings: {  }
+    region: content
+  field_e_mail:
+    weight: 4
+    label: above
+    settings: {  }
+    third_party_settings: {  }
+    type: text_default
+    region: content
+  field_featured_image:
+    weight: 0
+    label: hidden
+    settings:
+      view_mode: full
+      link: false
+    third_party_settings: {  }
+    type: entity_reference_entity_view
+    region: content
+  field_files:
+    weight: 6
+    label: above
+    settings:
+      use_description_as_link_text: true
+    third_party_settings: {  }
+    type: file_default
+    region: content
+  field_phone_number:
+    weight: 3
+    label: above
+    settings: {  }
+    third_party_settings: {  }
+    type: text_default
+    region: content
+  field_range_of_services:
+    weight: 2
+    label: above
+    settings: {  }
+    third_party_settings: {  }
+    type: text_default
+    region: content
+  field_staff:
+    weight: 5
+    label: above
+    settings: {  }
+    third_party_settings: {  }
+    type: text_default
+    region: content
+  field_tags:
+    weight: 7
+    label: above
+    settings:
+      link: true
+    third_party_settings: {  }
+    type: entity_reference_label
+    region: content
+hidden:
+  langcode: true
+  links: true

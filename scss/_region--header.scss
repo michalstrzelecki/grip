@@ -1,0 +1,44 @@
+/**
+ * Styles for region--header.html.twig
+ */
+@include media-breakpoint-up(lg) {
+  #region--header-wrapper {
+    position: relative;
+    background: url('../assets/img/1500x652.jpg') no-repeat center;
+    background-size: cover;
+
+    // TODO: use it or remove it
+    & > .mask {
+      position: absolute;
+      left: 0;
+      top: 0;
+      height: 100%;
+      width: 100%;
+      background-color: transparentize($light, .4);
+    }
+  }
+
+  .path-frontpage {
+    #region--header-wrapper {
+      min-height: 80vh;
+    }
+  }
+}
+
+#site-slogan {
+  font-family: 'Courgette', cursive;
+}
+
+.path-frontpage #region--header {
+  margin: 0;
+}
+
+#region--header {
+  @include media-breakpoint-up(lg) {
+    margin: ($spacer * 4) 0;
+  }
+}
+
+#scroll-down i {
+  color: $secondary;
+}

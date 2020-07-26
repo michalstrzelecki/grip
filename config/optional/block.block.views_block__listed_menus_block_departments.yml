@@ -1,0 +1,24 @@
+uuid: b10f8a30-4198-4842-ac11-b68d9c867873
+langcode: pl
+status: true
+dependencies:
+  config:
+    - views.view.listed_menus
+  module:
+    - views
+  theme:
+    - grip
+id: views_block__listed_menus_block_departments
+theme: grip
+region: footer_first
+weight: -13
+provider: null
+plugin: 'views_block:listed_menus-block_departments'
+settings:
+  id: 'views_block:listed_menus-block_departments'
+  label: ''
+  provider: views
+  label_display: visible
+  views_label: ''
+  items_per_page: none
+visibility: {  }

@@ -1,0 +1,21 @@
+uuid: 85b463b0-4b8b-49e1-af9d-6b8192d7b4e3
+langcode: pl
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_e_mail
+    - node.type.teams
+  module:
+    - text
+id: node.teams.field_e_mail
+field_name: field_e_mail
+entity_type: node
+bundle: teams
+label: E-mail
+description: ''
+required: false
+translatable: true
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: text

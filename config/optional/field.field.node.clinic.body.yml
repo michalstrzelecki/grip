@@ -1,0 +1,23 @@
+uuid: b93d7c1d-00a1-46fe-8a0f-35b8f2f075ed
+langcode: pl
+status: true
+dependencies:
+  config:
+    - field.storage.node.body
+    - node.type.clinic
+  module:
+    - text
+id: node.clinic.body
+field_name: body
+entity_type: node
+bundle: clinic
+label: Content
+description: ''
+required: false
+translatable: true
+default_value: {  }
+default_value_callback: ''
+settings:
+  display_summary: true
+  required_summary: false
+field_type: text_with_summary

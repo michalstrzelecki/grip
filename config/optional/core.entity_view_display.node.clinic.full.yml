@@ -1,0 +1,105 @@
+uuid: 50a7f1eb-0d91-4529-98b1-9eeb9c3f14e1
+langcode: pl
+status: true
+dependencies:
+  config:
+    - core.entity_view_mode.node.full
+    - field.field.node.clinic.body
+    - field.field.node.clinic.field_address
+    - field.field.node.clinic.field_e_mail
+    - field.field.node.clinic.field_featured_image
+    - field.field.node.clinic.field_files
+    - field.field.node.clinic.field_phone_number
+    - field.field.node.clinic.field_range_of_services
+    - field.field.node.clinic.field_receptions
+    - field.field.node.clinic.field_staff
+    - field.field.node.clinic.field_tags
+    - node.type.clinic
+  module:
+    - file
+    - text
+    - user
+id: node.clinic.full
+targetEntityType: node
+bundle: clinic
+mode: full
+content:
+  body:
+    label: hidden
+    type: text_default
+    weight: 1
+    settings: {  }
+    third_party_settings: {  }
+    region: content
+  field_address:
+    weight: 7
+    label: above
+    settings:
+      link_to_entity: false
+    third_party_settings: {  }
+    type: string
+    region: content
+  field_e_mail:
+    weight: 6
+    label: above
+    settings: {  }
+    third_party_settings: {  }
+    type: text_default
+    region: content
+  field_featured_image:
+    type: entity_reference_entity_view
+    weight: 0
+    region: content
+    label: hidden
+    settings:
+      view_mode: full
+      link: false
+    third_party_settings: {  }
+  field_files:
+    weight: 8
+    label: above
+    settings:
+      use_description_as_link_text: true
+    third_party_settings: {  }
+    type: file_default
+    region: content
+  field_phone_number:
+    weight: 5
+    label: above
+    settings: {  }
+    third_party_settings: {  }
+    type: text_default
+    region: content
+  field_range_of_services:
+    type: text_default
+    weight: 2
+    region: content
+    label: above
+    settings: {  }
+    third_party_settings: {  }
+  field_receptions:
+    weight: 3
+    label: above
+    settings:
+      link_to_entity: false
+    third_party_settings: {  }
+    type: string
+    region: content
+  field_staff:
+    weight: 4
+    label: above
+    settings: {  }
+    third_party_settings: {  }
+    type: text_default
+    region: content
+  field_tags:
+    weight: 9
+    label: above
+    settings:
+      link: true
+    third_party_settings: {  }
+    type: entity_reference_label
+    region: content
+hidden:
+  langcode: true
+  links: true

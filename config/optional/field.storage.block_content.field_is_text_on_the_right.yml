@@ -1,0 +1,18 @@
+uuid: 2e7a1de1-376c-4d60-8817-2366a4e79611
+langcode: pl
+status: true
+dependencies:
+  module:
+    - block_content
+id: block_content.field_is_text_on_the_right
+field_name: field_is_text_on_the_right
+entity_type: block_content
+type: boolean
+settings: {  }
+module: core
+locked: false
+cardinality: 1
+translatable: true
+indexes: {  }
+persist_with_no_fields: false
+custom_storage: false

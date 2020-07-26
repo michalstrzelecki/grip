@@ -1,0 +1,27 @@
+uuid: 5fab1b2c-5799-40ff-81d0-14a41ecb6fc0
+langcode: pl
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_files
+    - node.type.about_us
+  module:
+    - file
+id: node.about_us.field_files
+field_name: field_files
+entity_type: node
+bundle: about_us
+label: Files
+description: ''
+required: false
+translatable: true
+default_value: {  }
+default_value_callback: ''
+settings:
+  file_directory: about_us
+  file_extensions: 'pdf doc docx docm xls xlsx xlsm xml png gif jpg jpeg webp'
+  max_filesize: '64 MB'
+  description_field: true
+  handler: 'default:file'
+  handler_settings: {  }
+field_type: file

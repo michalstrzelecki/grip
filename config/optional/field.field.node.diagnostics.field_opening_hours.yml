@@ -1,0 +1,19 @@
+uuid: 4b604550-1319-4d43-a510-1fb58c48dc96
+langcode: pl
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_opening_hours
+    - node.type.diagnostics
+id: node.diagnostics.field_opening_hours
+field_name: field_opening_hours
+entity_type: node
+bundle: diagnostics
+label: 'Opening days and hours'
+description: "One field for one day when the studio is open. \ R \ n <strong> Format: </strong> Monday - 08:00 - 16:00"
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: string

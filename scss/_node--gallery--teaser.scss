@@ -1,0 +1,11 @@
+/**
+ * Styles for node--gallery--teaser.html.twig
+ */
+.node--type-gallery.node--view-mode-teaser {
+  .field--type-image {
+    .field__item {
+      flex-basis: 60px;
+      max-width: 120px;
+    }
+  }
+}

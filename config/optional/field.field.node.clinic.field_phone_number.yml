@@ -1,0 +1,21 @@
+uuid: ac37f6dd-44fd-4b2f-ace9-d5715824d974
+langcode: pl
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_phone_number
+    - node.type.clinic
+  module:
+    - text
+id: node.clinic.field_phone_number
+field_name: field_phone_number
+entity_type: node
+bundle: clinic
+label: 'Phone numbers'
+description: ''
+required: false
+translatable: true
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: text

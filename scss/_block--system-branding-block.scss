@@ -1,0 +1,11 @@
+/**
+ * Styles for block--system-branding-block.html.twig
+ */
+#block-grip-branding {
+  @include media-breakpoint-up(lg) {
+    .site-branding-text {
+      border-left: $spacer * .25 solid $primary;
+      padding-left: $spacer;
+    }
+  }
+}

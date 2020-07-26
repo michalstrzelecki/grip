@@ -1,0 +1,29 @@
+uuid: 66ed1372-ca27-41a2-95c7-02d323294f7e
+langcode: pl
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_featured_image
+    - media.type.image
+    - node.type.clinical_examination
+id: node.clinical_examination.field_featured_image
+field_name: field_featured_image
+entity_type: node
+bundle: clinical_examination
+label: 'Featured photo'
+description: ''
+required: false
+translatable: true
+default_value: {  }
+default_value_callback: ''
+settings:
+  handler: 'default:media'
+  handler_settings:
+    target_bundles:
+      image: image
+    sort:
+      field: created
+      direction: DESC
+    auto_create: false
+    auto_create_bundle: ''
+field_type: entity_reference

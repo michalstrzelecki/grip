@@ -1,0 +1,35 @@
+uuid: 6a34ae4a-7352-4c80-9aa9-a42a93a0cfb1
+langcode: pl
+status: true
+dependencies:
+  config:
+    - core.entity_view_mode.node.vertical_card
+    - field.field.node.advertisement.body
+    - field.field.node.advertisement.field_e_mail
+    - field.field.node.advertisement.field_external_services
+    - field.field.node.advertisement.field_files
+    - field.field.node.advertisement.field_phone_number
+    - node.type.advertisement
+  module:
+    - text
+    - user
+id: node.advertisement.vertical_card
+targetEntityType: node
+bundle: advertisement
+mode: vertical_card
+content:
+  body:
+    label: hidden
+    type: text_summary_or_trimmed
+    weight: 0
+    settings:
+      trim_length: 300
+    third_party_settings: {  }
+    region: content
+hidden:
+  field_e_mail: true
+  field_external_services: true
+  field_files: true
+  field_phone_number: true
+  langcode: true
+  links: true

@@ -1,0 +1,27 @@
+uuid: d0e2ebaf-5438-4801-8037-17a699004775
+langcode: pl
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_files
+    - node.type.advertisement
+  module:
+    - file
+id: node.advertisement.field_files
+field_name: field_files
+entity_type: node
+bundle: advertisement
+label: Files
+description: ''
+required: false
+translatable: true
+default_value: {  }
+default_value_callback: ''
+settings:
+  file_directory: advertisement
+  file_extensions: 'pdf doc docx docm xls xlsx xlsm xml png gif jpg jpeg webp'
+  max_filesize: '64 MB'
+  description_field: true
+  handler: 'default:file'
+  handler_settings: {  }
+field_type: file

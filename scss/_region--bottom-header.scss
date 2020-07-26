@@ -1,0 +1,14 @@
+/**
+ * Styles for region--bottom-header.html.twig
+ */
+.path-frontpage #region--bottom-header--wrapper {
+  position: absolute;
+  left: 0;
+  bottom: 0;
+}
+
+#region--bottom-header--wrapper {
+  z-index: 2;
+  background-color: transparentize($light, .1);
+  width: 100%;
+}

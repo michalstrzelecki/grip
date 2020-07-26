@@ -1,0 +1,19 @@
+uuid: dcfb281b-b785-498d-8570-4d1f23443322
+langcode: pl
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_case_number
+    - node.type.auction
+id: node.auction.field_case_number
+field_name: field_case_number
+entity_type: node
+bundle: auction
+label: 'Case number'
+description: ''
+required: true
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: string

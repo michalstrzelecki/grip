@@ -1,0 +1,43 @@
+/**
+ * Styles for vertical and horizontal card view modes.
+ */
+.node--view-mode-horizontal-card,
+.node--view-mode-vertical-card {
+  transition: all 400ms;
+  overflow: hidden;
+  background-color: $light;
+
+  .left {
+    overflow: hidden;
+  }
+
+  &:hover {
+    @extend .shadow;
+    background-color: $white;
+
+    .card-img-top {
+      transform: perspective(1px) translateZ(0) scale(1.05);
+    }
+
+    .card-footer {
+      background-color: $white;
+    }
+  }
+
+  .card-img-top {
+    transition: all 400ms;
+    height: auto;
+    width: 100%;
+    object-fit: cover;
+  }
+
+  .card-footer {
+    transition: all 400ms;
+
+    a::after {
+      @extend .fas;
+      content: fa-content($fa-var-arrow-alt-circle-right);
+      margin-left: $spacer * 0.5;
+    }
+  }
+}

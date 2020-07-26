@@ -1,0 +1,25 @@
+uuid: ced4d239-2dcb-46a9-b933-aa8dbf5cdb21
+langcode: pl
+status: true
+dependencies:
+  content:
+    - 'block_content:with_photos:094b9599-20b0-440e-a498-2ce0b3d438f5'
+  module:
+    - block_content
+  theme:
+    - grip
+id: otorhinolaryngology_department
+theme: grip
+region: featured_bottom_first
+weight: -13
+provider: null
+plugin: 'block_content:094b9599-20b0-440e-a498-2ce0b3d438f5'
+settings:
+  id: 'block_content:094b9599-20b0-440e-a498-2ce0b3d438f5'
+  label: 'Otorhinolaryngology department'
+  provider: block_content
+  label_display: visible
+  status: true
+  info: ''
+  view_mode: full
+visibility: {  }

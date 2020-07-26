@@ -1,0 +1,29 @@
+/**
+ * Styles for block-main-navigation-tiles
+ */
+#block-main-navigation-tiles {
+  display: none;
+  margin: $spacer 0;
+
+  @include media-breakpoint-up(lg) {
+    display: block;
+  }
+
+  #menu--main-tiles {
+    height: 100%;
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: space-between;
+    align-content: space-around;
+
+    .nav-item {
+      background-color: $white;
+      margin: $spacer $spacer;
+      flex: 1 0 25%;
+    }
+
+    .nav-link::before {
+      content: none;
+    }
+  }
+}

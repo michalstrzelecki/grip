@@ -1,0 +1,25 @@
+uuid: fe4b5da6-18b2-47fc-b5c8-55e445509260
+langcode: pl
+status: true
+dependencies:
+  content:
+    - 'block_content:with_photos:e2fcf5d9-807f-4f14-a02e-3a8673893052'
+  module:
+    - block_content
+  theme:
+    - grip
+id: modernization_and_expansion_of_the_hospital_emergency_department
+theme: grip
+region: featured_bottom_first
+weight: -14
+provider: null
+plugin: 'block_content:e2fcf5d9-807f-4f14-a02e-3a8673893052'
+settings:
+  id: 'block_content:e2fcf5d9-807f-4f14-a02e-3a8673893052'
+  label: 'Modernization and expansion of the hospital emergency department'
+  provider: block_content
+  label_display: visible
+  status: true
+  info: ''
+  view_mode: full
+visibility: {  }

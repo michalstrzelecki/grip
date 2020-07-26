@@ -1,0 +1,60 @@
+uuid: 9fb06cbf-e456-47f7-9238-469ecbf4de54
+langcode: pl
+status: true
+dependencies:
+  config:
+    - core.entity_view_mode.node.horizontal_card
+    - field.field.node.clinic.body
+    - field.field.node.clinic.field_address
+    - field.field.node.clinic.field_e_mail
+    - field.field.node.clinic.field_featured_image
+    - field.field.node.clinic.field_files
+    - field.field.node.clinic.field_phone_number
+    - field.field.node.clinic.field_range_of_services
+    - field.field.node.clinic.field_receptions
+    - field.field.node.clinic.field_staff
+    - field.field.node.clinic.field_tags
+    - node.type.clinic
+  module:
+    - text
+    - user
+id: node.clinic.horizontal_card
+targetEntityType: node
+bundle: clinic
+mode: horizontal_card
+content:
+  body:
+    label: hidden
+    type: text_summary_or_trimmed
+    weight: 1
+    settings:
+      trim_length: 300
+    third_party_settings: {  }
+    region: content
+  field_featured_image:
+    weight: 0
+    label: hidden
+    settings:
+      view_mode: url
+      link: false
+    third_party_settings: {  }
+    type: entity_reference_entity_view
+    region: content
+  field_tags:
+    type: entity_reference_label
+    weight: 2
+    region: content
+    label: hidden
+    settings:
+      link: true
+    third_party_settings: {  }
+hidden:
+  field_address: true
+  field_e_mail: true
+  field_files: true
+  field_phone_number: true
+  field_range_of_services: true
+  field_receptions: true
+  field_staff: true
+  langcode: true
+  links: true

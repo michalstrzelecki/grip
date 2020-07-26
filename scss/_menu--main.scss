@@ -1,0 +1,92 @@
+/**
+ * Styles for menu--main.html.twig
+ */
+#menu--main, #menu--main-tiles {
+  font-weight: bold;
+  text-transform: uppercase;
+  /*
+   * Level 0 styling.
+   */
+  & > .nav-item {
+    @extend .shadow-sm;
+    transition: all 400ms;
+    transform: perspective(1px) translateZ(0);
+    position: relative;
+    overflow: hidden;
+
+    &::before {
+      content: "";
+      position: absolute;
+      z-index: -1;
+      left: 0;
+      right: 100%;
+      bottom: 0;
+      background: $primary;
+      height: 2px;
+      transition-property: right;
+      transition-duration: 400ms;
+      transition-timing-function: ease-out;
+    }
+
+    &:hover::before,
+    &:focus::before,
+    &:active::before {
+      right: 0;
+    }
+
+    & + .nav-item {
+      margin-top: $spacer;
+    }
+
+    &--active-trail {
+      &::before {
+        content: none;
+      }
+
+      & > .nav-link {
+        border-left: solid $warning $spacer * .25;
+      }
+    }
+
+    &--collapsed {
+      & > .nav-link {
+        &::before {
+          @extend .fas;
+          content: fa-content($fa-var-caret-right);
+        }
+      }
+    }
+
+    .nav-link {
+      color: $primary;
+
+      &.nav-item--active-trail {
+        color: $warning;
+      }
+    }
+
+    &:hover {
+      @extend .shadow;
+      background-color: $light;
+    }
+  }
+
+  /*
+   * Level 1 and 1+ styling.
+   */
+  ul {
+    & > .nav-item {
+      &--active-trail {
+        font-weight: bold;
+      }
+
+      & > .nav-link {
+        &::before {
+          @extend .fas, .fa-xxs;
+          content: fa-content($fa-var-circle);
+          margin-right: $spacer * .25;
+        }
+      }
+    }
+  }
+}

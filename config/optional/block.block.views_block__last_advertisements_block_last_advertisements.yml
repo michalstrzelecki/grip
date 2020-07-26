@@ -1,0 +1,24 @@
+uuid: 1d73a44c-3ec2-4bb9-beca-9269229788ae
+langcode: pl
+status: true
+dependencies:
+  config:
+    - views.view.last_advertisements
+  module:
+    - views
+  theme:
+    - grip
+id: views_block__last_advertisements_block_last_advertisements
+theme: grip
+region: featured_bottom_second
+weight: -12
+provider: null
+plugin: 'views_block:last_advertisements-block_last_advertisements'
+settings:
+  id: 'views_block:last_advertisements-block_last_advertisements'
+  label: ''
+  provider: views
+  label_display: visible
+  views_label: ''
+  items_per_page: none
+visibility: {  }

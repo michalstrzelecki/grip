@@ -1,0 +1,11 @@
+uuid: 765ac75c-3369-421a-9ab4-e0893677fa71
+langcode: pl
+status: true
+dependencies:
+  config:
+    - taxonomy.vocabulary.galleries
+id: taxonomy_term.galleries
+target_entity_type_id: taxonomy_term
+target_bundle: galleries
+default_langcode: site_default
+language_alterable: false

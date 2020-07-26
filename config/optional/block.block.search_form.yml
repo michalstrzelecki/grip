@@ -1,0 +1,21 @@
+uuid: 78fb1fe8-a3ad-46ea-ac81-c54e59363af7
+langcode: pl
+status: true
+dependencies:
+  module:
+    - search
+  theme:
+    - grip
+id: search_form
+theme: grip
+region: header
+weight: -14
+provider: null
+plugin: search_form_block
+settings:
+  id: search_form_block
+  label: 'Search form'
+  provider: search
+  label_display: '0'
+  page_id: ''
+visibility: {  }

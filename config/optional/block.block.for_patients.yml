@@ -1,0 +1,25 @@
+uuid: 6b7eaf62-7785-4c4c-bf45-f9e9bab73c8b
+langcode: pl
+status: true
+dependencies:
+  config:
+    - system.menu.for-patients
+  module:
+    - system
+  theme:
+    - grip
+id: for_patients
+theme: grip
+region: featured_bottom_third
+weight: 0
+provider: null
+plugin: 'system_menu_block:for-patients'
+settings:
+  id: 'system_menu_block:for-patients'
+  label: 'For the patients'
+  provider: system
+  label_display: visible
+  level: 1
+  depth: 1
+  expand_all_items: false
+visibility: {  }

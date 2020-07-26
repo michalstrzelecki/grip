@@ -1,0 +1,19 @@
+uuid: 15b0a857-290e-41c5-8077-3792d7c2fa64
+langcode: pl
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_address
+    - node.type.ward
+id: node.ward.field_address
+field_name: field_address
+entity_type: node
+bundle: ward
+label: Address
+description: ''
+required: false
+translatable: true
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: string

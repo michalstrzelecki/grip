@@ -1,0 +1,8 @@
+uuid: 9dff13ba-e014-4c6f-bdaa-026ea0eaaee1
+langcode: pl
+status: true
+dependencies: {  }
+id: for-patients
+label: 'For patients'
+description: ''
+locked: false

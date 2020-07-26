@@ -1,0 +1,28 @@
+uuid: 93e9f6ed-0134-4000-a0d4-1a4145f5a5c4
+langcode: pl
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_remote_video
+    - media.type.remote_video
+    - node.type.press_article
+id: node.press_article.field_remote_video
+field_name: field_remote_video
+entity_type: node
+bundle: press_article
+label: 'Videos from external websites'
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  handler: 'default:media'
+  handler_settings:
+    target_bundles:
+      remote_video: remote_video
+    sort:
+      field: _none
+    auto_create: false
+    auto_create_bundle: ''
+field_type: entity_reference

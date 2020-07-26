@@ -1,0 +1,21 @@
+uuid: cff4a1e4-7c8a-417e-9a8d-dd992481e490
+langcode: pl
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_staff
+    - node.type.clinic
+  module:
+    - text
+id: node.clinic.field_staff
+field_name: field_staff
+entity_type: node
+bundle: clinic
+label: Staff
+description: ''
+required: false
+translatable: true
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: text

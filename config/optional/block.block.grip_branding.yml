@@ -1,0 +1,25 @@
+uuid: 3aa291a4-9560-4374-99e3-8b55347bbf4e
+langcode: pl
+status: true
+dependencies:
+  module:
+    - system
+  theme:
+    - grip
+_core:
+  default_config_hash: NDwadleLD3YVSbDUaakxyYZyINYtkFtOVGShfq4kWy8
+id: grip_branding
+theme: grip
+region: top_header
+weight: -12
+provider: null
+plugin: system_branding_block
+settings:
+  id: system_branding_block
+  label: 'Site brand'
+  provider: system
+  label_display: '0'
+  use_site_logo: true
+  use_site_name: true
+  use_site_slogan: true
+visibility: {  }

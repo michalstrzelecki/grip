@@ -1,0 +1,13 @@
+/**
+ * Styles for breadcrumb.html.twig.html.twig
+ */
+#block-breadcrumbs {
+  background-color: transparentize($warning, .9);
+}
+
+.breadcrumb {
+  border-radius: 0;
+  background-color: transparent;
+  margin: 0;
+  padding: $spacer 0;
+}

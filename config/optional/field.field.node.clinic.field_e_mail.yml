@@ -1,0 +1,21 @@
+uuid: fcec6bfd-11e6-4fbf-a246-ff92ed8fd29e
+langcode: pl
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_e_mail
+    - node.type.clinic
+  module:
+    - text
+id: node.clinic.field_e_mail
+field_name: field_e_mail
+entity_type: node
+bundle: clinic
+label: E-mail
+description: ''
+required: false
+translatable: true
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: text

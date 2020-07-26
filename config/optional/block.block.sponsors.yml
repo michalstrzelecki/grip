@@ -1,0 +1,25 @@
+uuid: 704278e3-9be6-43d9-bf87-3169ae8f7608
+langcode: pl
+status: true
+dependencies:
+  content:
+    - 'block_content:basic:ae4655b6-e9cc-4203-afde-0062ccd9031d'
+  module:
+    - block_content
+  theme:
+    - grip
+id: sponsors
+theme: grip
+region: logos_second
+weight: 0
+provider: null
+plugin: 'block_content:ae4655b6-e9cc-4203-afde-0062ccd9031d'
+settings:
+  id: 'block_content:ae4655b6-e9cc-4203-afde-0062ccd9031d'
+  label: Sponsors
+  provider: block_content
+  label_display: visible
+  status: true
+  info: ''
+  view_mode: full
+visibility: {  }

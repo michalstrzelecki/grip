@@ -1,0 +1,23 @@
+uuid: afc440f0-5a33-4c33-9a44-a9551f075a07
+langcode: pl
+status: true
+dependencies:
+  config:
+    - field.storage.node.body
+    - node.type.clinical_examination
+  module:
+    - text
+id: node.clinical_examination.body
+field_name: body
+entity_type: node
+bundle: clinical_examination
+label: Content
+description: ''
+required: false
+translatable: true
+default_value: {  }
+default_value_callback: ''
+settings:
+  display_summary: true
+  required_summary: false
+field_type: text_with_summary

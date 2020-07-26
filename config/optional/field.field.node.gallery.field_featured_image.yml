@@ -1,0 +1,29 @@
+uuid: bab7360f-2336-4414-b978-a770dcc23018
+langcode: pl
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_featured_image
+    - media.type.image
+    - node.type.gallery
+id: node.gallery.field_featured_image
+field_name: field_featured_image
+entity_type: node
+bundle: gallery
+label: 'Featured photo'
+description: ''
+required: false
+translatable: true
+default_value: {  }
+default_value_callback: ''
+settings:
+  handler: 'default:media'
+  handler_settings:
+    target_bundles:
+      image: image
+    sort:
+      field: created
+      direction: DESC
+    auto_create: false
+    auto_create_bundle: ''
+field_type: entity_reference

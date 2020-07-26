@@ -1,0 +1,23 @@
+uuid: 87178478-3a31-44bb-a352-ccc5dc5e37aa
+langcode: pl
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_is_completed
+    - node.type.auction
+id: node.auction.field_is_completed
+field_name: field_is_completed
+entity_type: node
+bundle: auction
+label: Zakończony
+description: ''
+required: false
+translatable: false
+default_value:
+  -
+    value: 0
+default_value_callback: ''
+settings:
+  on_label: Zakończony
+  off_label: Niezakończony
+field_type: boolean

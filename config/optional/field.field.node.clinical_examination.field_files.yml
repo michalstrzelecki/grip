@@ -1,0 +1,27 @@
+uuid: f7430a48-49c8-473d-87f1-50976caa0ec8
+langcode: pl
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_files
+    - node.type.clinical_examination
+  module:
+    - file
+id: node.clinical_examination.field_files
+field_name: field_files
+entity_type: node
+bundle: clinical_examination
+label: Files
+description: ''
+required: false
+translatable: true
+default_value: {  }
+default_value_callback: ''
+settings:
+  file_directory: clinical_examination
+  file_extensions: 'pdf doc docx docm xls xlsx xlsm xml png gif jpg jpeg webp'
+  max_filesize: '64 MB'
+  description_field: true
+  handler: 'default:file'
+  handler_settings: {  }
+field_type: file

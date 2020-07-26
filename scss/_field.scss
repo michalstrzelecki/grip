@@ -1,0 +1,20 @@
+/**
+ * Styles for field.html.twig
+ */
+.field--label-above {
+  & > .field__label {
+    @extend .h2;
+  }
+}
+
+.field__items {
+  .field__item {
+    p {
+      margin: 0;
+    }
+  }
+}
+
+.field__item {
+  word-break: break-word;
+}

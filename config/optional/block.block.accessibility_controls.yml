@@ -1,0 +1,25 @@
+uuid: 0c8412a0-352a-4930-96ce-ed72b219244c
+langcode: pl
+status: true
+dependencies:
+  content:
+    - 'block_content:basic:528e3a82-d4aa-406f-b746-c61b185a7637'
+  module:
+    - block_content
+  theme:
+    - grip
+id: accessibility_controls
+theme: grip
+region: top_header
+weight: -14
+provider: null
+plugin: 'block_content:528e3a82-d4aa-406f-b746-c61b185a7637'
+settings:
+  id: 'block_content:528e3a82-d4aa-406f-b746-c61b185a7637'
+  label: Dostępność
+  provider: block_content
+  label_display: '0'
+  status: true
+  info: ''
+  view_mode: full
+visibility: {  }

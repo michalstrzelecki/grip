@@ -1,0 +1,10 @@
+uuid: 623c6d95-977b-43d4-baea-e2044e4cfb4d
+langcode: pl
+status: true
+dependencies: {  }
+_core:
+  default_config_hash: zglzjmYxi0G0ag9MZ02y0LSJOdpWRwJxyP_OvFojFyo
+id: basic
+label: 'Simple block'
+revision: 0
+description: ''

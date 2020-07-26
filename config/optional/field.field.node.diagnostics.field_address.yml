@@ -1,0 +1,19 @@
+uuid: bc3be2c3-4b06-4855-ad47-ab8169a94216
+langcode: pl
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_address
+    - node.type.diagnostics
+id: node.diagnostics.field_address
+field_name: field_address
+entity_type: node
+bundle: diagnostics
+label: Adres
+description: ''
+required: false
+translatable: true
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: string

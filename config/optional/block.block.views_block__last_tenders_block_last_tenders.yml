@@ -1,0 +1,24 @@
+uuid: ccb29f8a-1fc7-4b1a-aa91-dff74861eba4
+langcode: pl
+status: true
+dependencies:
+  config:
+    - views.view.last_tenders
+  module:
+    - views
+  theme:
+    - grip
+id: views_block__last_tenders_block_last_tenders
+theme: grip
+region: featured_bottom_second
+weight: -13
+provider: null
+plugin: 'views_block:last_tenders-block_last_tenders'
+settings:
+  id: 'views_block:last_tenders-block_last_tenders'
+  label: ''
+  provider: views
+  label_display: visible
+  views_label: ''
+  items_per_page: none
+visibility: {  }

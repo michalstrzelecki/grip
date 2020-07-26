@@ -1,0 +1,25 @@
+uuid: ecb8e377-727e-4c04-8e8c-b1b9428bbc25
+langcode: pl
+status: true
+dependencies:
+  content:
+    - 'block_content:basic:dca7295a-4dd5-4b9f-8ae2-cdf001464a48'
+  module:
+    - block_content
+  theme:
+    - grip
+id: hospital_acreditations
+theme: grip
+region: top_header
+weight: -13
+provider: null
+plugin: 'block_content:dca7295a-4dd5-4b9f-8ae2-cdf001464a48'
+settings:
+  id: 'block_content:dca7295a-4dd5-4b9f-8ae2-cdf001464a48'
+  label: Accreditations
+  provider: block_content
+  label_display: '0'
+  status: true
+  info: ''
+  view_mode: full
+visibility: {  }

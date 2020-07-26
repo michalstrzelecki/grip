@@ -1,0 +1,79 @@
+/**
+ * Buttons.
+ **/
+.btn-primary,
+.btn-outline-primary {
+  &::after {
+    @extend .fas;
+    content: fa-content($fa-var-arrow-alt-circle-right);
+    margin-left: $spacer * 0.5;
+  }
+}
+
+/**
+ * Icons.
+ **/
+.fa-xxs {
+  font-size: 0.5rem;
+  vertical-align: .2rem; // need better way to handle icon's vertical align
+}
+
+.icon::before {
+  @extend .mr-2;
+  @include fa-icon();
+
+  vertical-align: inherit;
+}
+
+/**
+ * Text.
+ **/
+.spaced {
+  letter-spacing: 0.3rem;
+  word-spacing: 0.7rem;
+}
+
+.text-transform-none {
+  text-transform: none;
+}
+
+/**
+ * Animations.
+ **/
+.bounce {
+  animation: bounce 3s infinite;
+}
+
+@keyframes bounce {
+  0%,
+  20%,
+  50%,
+  80%,
+  100% {
+    transform: translateY(0);
+  }
+  40% {
+    transform: translateY(-30px);
+  }
+  60% {
+    transform: translateY(-15px);
+  }
+}
+
+/**
+ * Sizing.
+ **/
+.height-1 {
+  height: 1px;
+}
+
+.border-box {
+  box-sizing: border-box !important;
+}
+
+/**
+ * Placement.
+ **/
+.z-index-2 {
+  z-index: 2;
+}

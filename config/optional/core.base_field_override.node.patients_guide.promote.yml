@@ -1,0 +1,22 @@
+uuid: bcd325ae-a8c1-4003-8dc6-d0191a15edcc
+langcode: pl
+status: true
+dependencies:
+  config:
+    - node.type.patients_guide
+id: node.patients_guide.promote
+field_name: promote
+entity_type: node
+bundle: patients_guide
+label: 'Promoted on the home page'
+description: ''
+required: false
+translatable: true
+default_value:
+  -
+    value: 1
+default_value_callback: ''
+settings:
+  on_label: Włączony
+  off_label: Wyłączony
+field_type: boolean

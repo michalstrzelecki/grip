@@ -1,0 +1,23 @@
+uuid: 0ecf252b-1c26-4b8a-b37d-7b16b681583e
+langcode: pl
+status: true
+dependencies:
+  config:
+    - field.storage.node.body
+    - node.type.auction
+  module:
+    - text
+id: node.auction.body
+field_name: body
+entity_type: node
+bundle: auction
+label: Content
+description: ''
+required: false
+translatable: true
+default_value: {  }
+default_value_callback: ''
+settings:
+  display_summary: true
+  required_summary: false
+field_type: text_with_summary

@@ -1,0 +1,25 @@
+uuid: 768d9d57-a976-49e6-a957-101ae722cf4d
+langcode: pl
+status: true
+dependencies:
+  content:
+    - 'block_content:basic:c0e1cf00-c2e7-44ea-821c-52398c6bfaeb'
+  module:
+    - block_content
+  theme:
+    - grip
+id: contact_details
+theme: grip
+region: featured_bottom_third
+weight: 0
+provider: null
+plugin: 'block_content:c0e1cf00-c2e7-44ea-821c-52398c6bfaeb'
+settings:
+  id: 'block_content:c0e1cf00-c2e7-44ea-821c-52398c6bfaeb'
+  label: 'Contact details'
+  provider: block_content
+  label_display: visible
+  status: true
+  info: ''
+  view_mode: full
+visibility: {  }

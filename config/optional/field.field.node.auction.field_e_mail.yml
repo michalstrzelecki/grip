@@ -1,0 +1,21 @@
+uuid: cda285ca-f1a3-428e-ac0c-06dfb240681d
+langcode: pl
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_e_mail
+    - node.type.auction
+  module:
+    - text
+id: node.auction.field_e_mail
+field_name: field_e_mail
+entity_type: node
+bundle: auction
+label: E-mail
+description: ''
+required: false
+translatable: true
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: text

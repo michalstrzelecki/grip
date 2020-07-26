@@ -1,0 +1,21 @@
+uuid: 2841618f-48ef-481f-83e8-3d82b4dbbcd6
+langcode: pl
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_range_of_services
+    - node.type.diagnostics
+  module:
+    - text
+id: node.diagnostics.field_range_of_services
+field_name: field_range_of_services
+entity_type: node
+bundle: diagnostics
+label: 'Range of services'
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: text_long

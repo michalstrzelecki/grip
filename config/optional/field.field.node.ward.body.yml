@@ -1,0 +1,23 @@
+uuid: d9ea8806-fd1d-4718-9ca1-a5fa32d2a9e4
+langcode: pl
+status: true
+dependencies:
+  config:
+    - field.storage.node.body
+    - node.type.ward
+  module:
+    - text
+id: node.ward.body
+field_name: body
+entity_type: node
+bundle: ward
+label: Content
+description: ''
+required: false
+translatable: true
+default_value: {  }
+default_value_callback: ''
+settings:
+  display_summary: true
+  required_summary: false
+field_type: text_with_summary

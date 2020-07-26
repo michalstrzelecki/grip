@@ -1,0 +1,8 @@
+<footer class="node__meta">
+  {{ author_picture }}
+  <small{{ author_attributes.addClass(['node__submitted', 'text-muted']) }}>
+    {% set nodeCretedDatetime = node.createdTime|format_date('short') %}
+    {% trans %}Submitted on {{ nodeCretedDatetime }}{% endtrans %}
+    {{ metadata }}
+  </small>
+</footer>

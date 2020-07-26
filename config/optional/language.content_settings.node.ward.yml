@@ -1,0 +1,11 @@
+uuid: 1ab0338b-f798-4aa4-bd62-d7cd26fa9bbb
+langcode: pl
+status: true
+dependencies:
+  config:
+    - node.type.ward
+id: node.ward
+target_entity_type_id: node
+target_bundle: ward
+default_langcode: site_default
+language_alterable: false

@@ -1,0 +1,11 @@
+uuid: fd4ef2fc-83d4-4f27-89b8-2ceb9e86892a
+langcode: pl
+status: true
+dependencies:
+  config:
+    - node.type.patients_guide
+id: node.patients_guide
+target_entity_type_id: node
+target_bundle: patients_guide
+default_langcode: site_default
+language_alterable: false

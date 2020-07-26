@@ -1,0 +1,25 @@
+uuid: 1e445fdc-ff77-4493-9564-dceb23e711ae
+langcode: pl
+status: true
+dependencies:
+  content:
+    - 'block_content:with_photos:05991d3a-7461-42d0-afc1-eefedf0bc59e'
+  module:
+    - block_content
+  theme:
+    - grip
+id: department_of_neurology_and_stroke
+theme: grip
+region: featured_bottom_first
+weight: -11
+provider: null
+plugin: 'block_content:05991d3a-7461-42d0-afc1-eefedf0bc59e'
+settings:
+  id: 'block_content:05991d3a-7461-42d0-afc1-eefedf0bc59e'
+  label: 'Department of Neurology and Stroke'
+  provider: block_content
+  label_display: visible
+  status: true
+  info: ''
+  view_mode: full
+visibility: {  }

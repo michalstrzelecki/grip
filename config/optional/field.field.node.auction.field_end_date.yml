@@ -1,0 +1,21 @@
+uuid: 0cc6fb3f-f193-4dd6-b10e-f90ef1129d78
+langcode: pl
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_end_date
+    - node.type.auction
+  module:
+    - datetime
+id: node.auction.field_end_date
+field_name: field_end_date
+entity_type: node
+bundle: auction
+label: 'Date of settlement'
+description: ''
+required: true
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: datetime

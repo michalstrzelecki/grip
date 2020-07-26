@@ -1,0 +1,25 @@
+uuid: 15389119-a44a-45e7-8140-0c7b24638717
+langcode: pl
+status: true
+dependencies:
+  content:
+    - 'block_content:with_photos:8675b24b-bd97-4760-b66a-118273346945'
+  module:
+    - block_content
+  theme:
+    - grip
+id: clinical_trial_center
+theme: grip
+region: featured_bottom_first
+weight: -12
+provider: null
+plugin: 'block_content:8675b24b-bd97-4760-b66a-118273346945'
+settings:
+  id: 'block_content:8675b24b-bd97-4760-b66a-118273346945'
+  label: 'Clinical Research Center'
+  provider: block_content
+  label_display: visible
+  status: true
+  info: ''
+  view_mode: full
+visibility: {  }

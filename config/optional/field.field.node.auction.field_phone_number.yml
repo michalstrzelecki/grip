@@ -1,0 +1,21 @@
+uuid: c61bbba3-4bbd-4511-b01c-365929532a09
+langcode: pl
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_phone_number
+    - node.type.auction
+  module:
+    - text
+id: node.auction.field_phone_number
+field_name: field_phone_number
+entity_type: node
+bundle: auction
+label: 'Phone number'
+description: ''
+required: false
+translatable: true
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: text

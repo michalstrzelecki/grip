@@ -1,0 +1,10 @@
+uuid: c30e2ca7-c816-49a0-8aa2-17ef8a7beb2f
+langcode: pl
+status: true
+dependencies:
+  module:
+    - node
+id: node.last_added
+label: 'Last added'
+targetEntityType: node
+cache: true

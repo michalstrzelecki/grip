@@ -1,0 +1,16 @@
+/**
+ * Styles for node--horizontal-card.html.twig
+ */
+.node--view-mode-horizontal-card {
+  .left {
+    overflow: hidden;
+  }
+
+  @include media-breakpoint-up(md) {
+    .card-img-top {
+      min-height: 100%;
+      max-height: #{$line-height-base * 5}rem;
+      object-position: top;
+    }
+  }
+}
