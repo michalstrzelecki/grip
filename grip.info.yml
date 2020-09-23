@@ -5,7 +5,10 @@ package: 'grip'
 core_version_requirement: ^9
 engine: twig
 libraries:
+  - grip/cookies
   - grip/global-styling
+  - grip/accessability-fontsizing
+  - grip/accessability-highcontrast
 libraries-override:
   core/normalize:
     css:

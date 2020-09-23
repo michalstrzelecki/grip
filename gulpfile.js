@@ -8,14 +8,17 @@ const gulp = require("gulp");
 const plumber = require("gulp-plumber");
 const rename = require("gulp-rename");
 const sass = require("gulp-sass");
-const uglify = require("gulp-uglify");
+const uglify = require("gulp-uglify-es").default;
+const gulpif = require('gulp-if');
+const lazypipe = require('lazypipe');
+const sourcemaps = require("gulp-sourcemaps");
 const concat = require('gulp-concat');
 const babel = require('gulp-babel');
 
 // BrowserSync
 function browserSync(done) {
   browsersync.init({
-    proxy: "http://drupal9.localhost"
+    proxy: "http://drupal.szpitalstaszow.localhost"
   });
   done();
 }
@@ -28,8 +31,15 @@ function browserSyncReload(done) {
 
 // CSS task
 function css() {
+  const productionCss = lazypipe()
+    .pipe(rename, {
+      suffix: ".min"
+    })
+    .pipe(cleanCSS)
+    .pipe(gulp.dest, "./css")
+
   return gulp
-    .src("./scss/**/*.scss")
+    .src('./src/scss/**/*.scss')
     .pipe(plumber())
     .pipe(sass({
       outputStyle: "expanded",
@@ -41,27 +51,26 @@ function css() {
       cascade: false
     }))
     .pipe(gulp.dest("./css"))
-    .pipe(rename({
-      suffix: ".min"
-    }))
-    .pipe(cleanCSS())
-    .pipe(gulp.dest("./css"))
+    .pipe(gulpif(process.env.NODE_ENV === 'production', productionCss()))
     .pipe(browsersync.stream());
 }
 
 // JS task
 function js() {
+  const productionJs = lazypipe()
+    .pipe(rename, {
+      suffix: '.min'
+    })
+    .pipe(sourcemaps.init)
+    .pipe(uglify)
+    .pipe(sourcemaps.write) // Inline source maps.
+    .pipe(gulp.dest, './js')
+
   return gulp
     .src([
-      './js/**/*.js',
-      '!./js/*.min.js',
-      // './node_modules/jquery/dist/jquery.js', // we load jquery in Drupal
-      './node_modules/popper.js/dist/popper.js',
+      './src/js/**/*.js',
       './node_modules/bootstrap/dist/js/bootstrap.js'
     ])
-    .pipe(concat({
-      path: 'main.js'
-    }))
     .pipe(babel({
       presets: [
         [
@@ -72,11 +81,9 @@ function js() {
         ]
       ]
     }))
-    .pipe(rename({
-      suffix: '.min'
-    }))
     .pipe(gulp.dest('./js'))
-    .pipe(browsersync.stream());
+    .pipe(gulpif(process.env.NODE_ENV === 'production', productionJs()))
+    .pipe(browsersync.stream())
 }
 
 // Watch files

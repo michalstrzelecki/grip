@@ -16719,7 +16719,7 @@ ul.menu .menu-item a::before,
  * Styles for block--system-branding-block.html.twig
  */
 @media (min-width: 992px) {
-  #block-grip-branding .site-branding-text {
+  #block-szpitalstaszow-branding .site-branding-text {
     border-left: 0.25rem solid #11698C;
     padding-left: 1rem;
   }
@@ -16728,7 +16728,7 @@ ul.menu .menu-item a::before,
 /**
  * Styles for block--system-menu-block.html.twig
  */
-#block-grip-tools {
+#block-szpitalstaszow-tools {
   background-color: #F2F2F2;
   padding: 1rem;
   margin-bottom: 1rem;
@@ -17148,7 +17148,7 @@ ul.pager__items {
 @media (min-width: 992px) {
   #region--header-wrapper {
     position: relative;
-    background: url("../assets/img/1500x652.jpg") no-repeat center;
+    background: url("../assets/img/stock-photo-healthcare-and-medical-concept-medicine-doctor-with-stethoscope-in-hand-and-patients-come-to-the-1124727410.jpg") no-repeat center;
     background-size: cover;
   }
   #region--header-wrapper > .mask {

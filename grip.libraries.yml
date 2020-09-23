@@ -1,10 +1,26 @@
 global-styling:
-  version: 0.2
+  version: 0.4
   css:
     theme:
-      css/main.min.css: {}
-  js: 
-    js/main.min.js: {}
+      css/main.min.css: { minified: true }
+  js:
+    js/bootstrap.min.js: { minified: true }
   dependencies:
     - core/jquery
-    - core/drupal
+    - core/popperjs
+cookies:
+  version: 1.0
+  js:
+    js/utils/cookies.min.js: { minified: true }
+accessability-fontsizing:
+  version: 0.6
+  js:
+    js/accessabilityFontSizing.min.js: { minified: true }
+  dependencies:
+    - szpitalstaszow/cookies
+accessability-highcontrast:
+  version: 0.6
+  js:
+    js/accessabilityHighContrast.min.js: { minified: true }
+  dependencies:
+    - szpitalstaszow/cookies
